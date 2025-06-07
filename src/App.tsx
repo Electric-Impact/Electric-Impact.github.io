@@ -15,9 +15,12 @@ export default function CatchAllRoute() {
   // get the page content from Builder
    useEffect(() => {
     async function fetchContent() {
+      const urlSearchParams = new URLSearchParams(window.location.search);
+      const page = urlSearchParams.get("page");
+      console.log(page);
       const content = await builder
         .get("page", {
-          url: window.location.pathname
+          url: !page ? window.location.pathname : `/${page}`,
         })
         .promise();
 
