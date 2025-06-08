@@ -47,6 +47,7 @@ export default function CatchAllRoute() {
   // return the page when found
   return (
     <>
+    <p>Hello</p>
       {/* Render the Builder page */}
       <BuilderComponent model="page" content={content} />
     </>
