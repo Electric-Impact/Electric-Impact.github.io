@@ -19,7 +19,6 @@ export default function CatchAllRoute() {
     async function fetchContent() {
       const urlSearchParams = new URLSearchParams(window.location.search);
       const page = urlSearchParams.get("page");
-      console.log(page);
       const content = await builder
         .get("page", {
           url: !page ? window.location.pathname : `/${page}`,
