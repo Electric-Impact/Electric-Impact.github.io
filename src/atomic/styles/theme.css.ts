@@ -20,11 +20,15 @@ export type ThemeFontSizes = {
 
 export type ThemeSpaces = {
   none: string
+  xxxs: string
+  xxs: string
+  xs: string
   s: string
   m: string
   l: string
   xl: string
   xxl: string
+  xxxl: string
 }
 
 export type ThemeFontFamilies = {
@@ -105,12 +109,15 @@ export const eiTheme: Theme = {
   },
   spaces: {
     none: '0',
-    s: 'clamp(1rem, 0.9712rem + 0.1282vw, 1.125rem)',
-    m: 'clamp(1.5rem, 1.4567rem + 0.1923vw, 1.6875rem)',
-    l: 'clamp(2rem, 1.9423rem + 0.2564vw, 2.25rem)',
-    xl: 'clamp(3rem, 2.9135rem + 0.3846vw, 3.375rem)',
-    xxl: 'clamp(4rem, 3.8846rem + 0.5128vw, 4.5rem)',
-    // xxxl: 'clamp(6rem, 5.8269rem + 0.7692vw, 6.75rem)',
+    xxxs: 'clamp(0.1875rem, 0.1716rem + 0.0654vw, 0.25rem)',
+    xxs: 'clamp(0.375rem, 0.3591rem + 0.0654vw, 0.4375rem)',
+    xs: 'clamp(0.5625rem, 0.5306rem + 0.1307vw, 0.6875rem)',
+    s: 'clamp(0.75rem, 0.7181rem + 0.1307vw, 0.875rem)',
+    m: 'clamp(1.125rem, 1.0772rem + 0.1961vw, 1.3125rem)',
+    l: 'clamp(1.5rem, 1.4363rem + 0.2614vw, 1.75rem)',
+    xl: 'clamp(2.25rem, 2.1544rem + 0.3922vw, 2.625rem)',
+    xxl: 'clamp(3rem, 2.8725rem + 0.5229vw, 3.5rem)',
+    xxxl: 'clamp(4.5rem, 4.3088rem + 0.7843vw, 5.25rem)',
   },
   borderRadiuses: {
     none: '0',
@@ -170,4 +177,5 @@ globalStyle("*", {
   fontFamily: "inherit",
   boxSizing: "border-box",
   margin: 0,
+  transition: "all 0.2s ease-in-out",
 })

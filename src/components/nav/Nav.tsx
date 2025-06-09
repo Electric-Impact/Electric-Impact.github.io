@@ -8,9 +8,10 @@ const Nav: React.FC = () => {
   return (
     <Box style={{ width: "100%", height: 55 }} backgroundColor={"black"}>
       <Container
-        display={"flex"}
+        display={'flex'}
         alignItems={"center"}
         justifyContent={"space-between"}
+        gap={'m'}
         style={{ height: "100%" }}
       >
         <Link href={"/"} className={css.text}>

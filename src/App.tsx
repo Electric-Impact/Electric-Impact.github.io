@@ -2,6 +2,7 @@ import { useEffect, useState } from "react"
 import { BuilderComponent, builder, useIsPreviewing } from "@builder.io/react"
 import Footer from "./components/footer/Footer"
 import Nav from "./components/nav/Nav"
+import { Container } from "./atomic"
 
 // Put your API key here
 builder.init("236f25c22ba94096b289a910d80952f1")
@@ -49,8 +50,10 @@ export default function CatchAllRoute() {
   return (
     <>
       <Nav />
-      {/* Render the Builder page */}
-      <BuilderComponent model="page" content={content} />
+      <Container>
+        {/* Render the Builder page */}
+        <BuilderComponent model="page" content={content} />
+      </Container>
       <Footer />
     </>
   )
