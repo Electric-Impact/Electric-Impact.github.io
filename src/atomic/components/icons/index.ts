@@ -1,1 +1,1 @@
-export type { IconType } from './Icon'
+export type { SocialIconType } from './SocialsIcon'

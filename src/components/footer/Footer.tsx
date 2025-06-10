@@ -1,8 +1,22 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Box, Container, Text } from "../../atomic"
-import Icons from "../../atomic/components/icons/Icon"
+import Socials from "../socials/Socials"
+import { FooterData } from "../../context/LinkContext"
+import builder from "@builder.io/react"
 
 const Footer: React.FC = () => {
+  const [footerData, setFooterData] = useState<FooterData>({
+    data: { email: '', sponsorships: '', socialLinks: [], legals: '' },
+  })
+  // get the footer data from Builder
+  useEffect(() => {
+    async function fetchContent() {
+      const content = (await builder.get("footer-data").promise()) as FooterData
+      setFooterData(content)
+    }
+    fetchContent()
+  }, [])
+
   return (
     <Box
       display={"flex"}
@@ -19,8 +33,8 @@ const Footer: React.FC = () => {
     >
       <Container
         display={"flex"}
-        flexDirection={{mobile: "column", tablet: "row"}}
-        alignItems={"center"}
+        flexDirection={{ mobile: "column", tablet: "row" }}
+        alignItems={"flex-start"}
         padding={"m"}
         backgroundColor={"black"}
         style={{ width: "100%" }}
@@ -48,7 +62,7 @@ const Footer: React.FC = () => {
               color={"white"}
               marginBottom={"none"}
             >
-                hello@figma.com
+              {footerData?.data?.email}
             </Text>
           </Box>
           <Box display={"flex"} flexDirection={"column"} gap={"xxs"}>
@@ -66,7 +80,7 @@ const Footer: React.FC = () => {
               color={"white"}
               marginBottom={"none"}
             >
-              sponsor@figma.com
+              {footerData?.data?.sponsorships}
             </Text>
           </Box>
         </Box>
@@ -86,13 +100,7 @@ const Footer: React.FC = () => {
             >
               Socials
             </Text>
-            <Box
-              display={'flex'} alignItems={'center'} justifyContent={'flex-start'} gap={'xs'}
-            >              
-              <Icons name="instagram" width={24} height={24} color="white" />
-              <Icons name="x" width={24} height={24} color="white" />
-              <Icons name="facebook" width={24} height={24} color="white" />
-            </Box>
+            <Socials socials={footerData?.data?.socialLinks} />
           </Box>
           <Box display={"flex"} flexDirection={"column"} gap={"xxs"}>
             <Text
@@ -101,7 +109,7 @@ const Footer: React.FC = () => {
               color={"fog"}
               marginBottom={"none"}
             >
-              New Fundraiser
+              Legals
             </Text>
             <Text
               fontFamily={"caption"}
@@ -109,8 +117,7 @@ const Footer: React.FC = () => {
               color={"white"}
               marginBottom={"none"}
             >
-              Running for Change is a 501(c)(3) non-profit organization.
-              Contributions are tax-deductible to the extent permitted by law.
+              {footerData?.data?.legals}
             </Text>
           </Box>
         </Box>

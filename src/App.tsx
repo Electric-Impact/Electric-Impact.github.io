@@ -10,7 +10,7 @@ builder.init("236f25c22ba94096b289a910d80952f1")
 // set whether you're using the Visual Editor,
 // whether there are changes,
 // and render the content if found
-export default function CatchAllRoute() {
+const App: React.FC = () => {
   const isPreviewingInBuilder = useIsPreviewing()
   const [notFound, setNotFound] = useState(false)
   const [content, setContent] = useState()
@@ -34,6 +34,7 @@ export default function CatchAllRoute() {
       if (content?.data.title) {
         document.title = content.data.title
       }
+
     }
     fetchContent()
   }, [window.location.pathname])
@@ -58,3 +59,5 @@ export default function CatchAllRoute() {
     </>
   )
 }
+
+export default App
