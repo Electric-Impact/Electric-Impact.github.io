@@ -5,6 +5,7 @@ import SocialIcon, {
 import Box from "../../atomic/components/atoms/box/Box"
 import { ThemeColors } from "../../atomic/styles/theme.css"
 import Link from "../link/Link"
+import * as css from "./Socials.css"
 
 export type SocialLink = {
   label: string
@@ -57,6 +58,7 @@ const Socials: React.FC<SocialLinkProps> = ({
           target={"_blank"}
           rel={"noreferrer"}
           aria-label={icon.label}
+          className={css.socialLink}
         >
           <SocialIcon
             name={icon.icon}

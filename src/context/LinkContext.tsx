@@ -8,3 +8,11 @@ export type FooterData = {
     legals: string
   }
 }
+
+export type NavData = {
+  data: {
+    links: {label: string, link: string}[]
+    useLogo: boolean
+    logo: string
+  }
+}

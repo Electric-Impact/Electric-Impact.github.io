@@ -1,7 +1,11 @@
-import { style } from "@vanilla-extract/css";
-import { themeVars } from "../../atomic/styles/theme.css";
+import { style } from "@vanilla-extract/css"
+import { themeVars } from "../../atomic/styles/theme.css"
 
 export const text = style({
-    color: themeVars.colors.white,
-    textDecoration: "none",
+  color: themeVars.colors.white,
+  textDecoration: "none",
+
+  ":hover": {
+    opacity: 0.7,
+  },
 })

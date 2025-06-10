@@ -1,10 +1,29 @@
-import React from "react"
+import React, { useEffect, useState } from "react"
 import { Box, Text } from "../../atomic"
-// import Image from "../image/Image"
+import Image from "../image/Image"
 import Link from "../link/Link"
 import * as css from "./Nav.css"
+import { NavData } from "../../context/LinkContext"
+import builder from "@builder.io/react"
 
 const Nav: React.FC = () => {
+  const [navData, setNavData] = useState<NavData>({
+    data: { links: [], useLogo: false, logo: "" },
+  })
+
+  // get the navigation data from Builder
+  useEffect(() => {
+    async function fetchContent() {
+      const content = await builder
+        .get("navigation-data")
+        .promise();
+      setNavData(content as NavData);
+    }
+    fetchContent()
+  }, [])
+
+  const nav = navData?.data
+
   return (
     <Box
       style={{ width: "100%", height: 55 }}
@@ -16,14 +35,18 @@ const Nav: React.FC = () => {
       paddingX={"l"}
     >
       <Link href={"/"} className={css.text}>
-        {/* <Image
+        {nav?.useLogo && (
+          <Image
             height={40}
-            src={"/assets/images/text_logo.webp"}
+            src={nav?.logo}
             alt={"Electric Impact logotype"}
-          /> */}
-        <Text fontFamily={"heading"} fontSize={"m"}>
-          Home
-        </Text>
+          />
+        )}
+        {!nav?.useLogo && (
+          <Text fontFamily={"heading"} fontSize={"m"}>
+            Home
+          </Text>
+        )}
       </Link>
       <Box
         display={"flex"}
@@ -31,17 +54,13 @@ const Nav: React.FC = () => {
         alignItems={"center"}
         gap={"m"}
       >
-        <Link href={"/about-us"} className={css.text}>
-          <Text fontFamily={"heading"} fontSize={"m"}>
-            About Us
-          </Text>
-        </Link>
-
-        <Link href={"/games"} className={css.text}>
-          <Text fontFamily={"heading"} fontSize={"m"}>
-            Games
-          </Text>
-        </Link>
+        {nav?.links?.map((link, index) => (
+          <Link key={index} href={link.link} className={css.text}>
+            <Text fontFamily={"heading"} fontSize={"m"}>
+              {link.label}
+            </Text>
+          </Link>
+        ))}
       </Box>
     </Box>
   )

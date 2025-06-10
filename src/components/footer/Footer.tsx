@@ -6,7 +6,7 @@ import builder from "@builder.io/react"
 
 const Footer: React.FC = () => {
   const [footerData, setFooterData] = useState<FooterData>({
-    data: { email: '', sponsorships: '', socialLinks: [], legals: '' },
+    data: { email: "", sponsorships: "", socialLinks: [], legals: "" },
   })
   // get the footer data from Builder
   useEffect(() => {
@@ -16,6 +16,8 @@ const Footer: React.FC = () => {
     }
     fetchContent()
   }, [])
+
+  const footer = footerData?.data
 
   return (
     <Box
@@ -62,7 +64,7 @@ const Footer: React.FC = () => {
               color={"white"}
               marginBottom={"none"}
             >
-              {footerData?.data?.email}
+              {footer?.email}
             </Text>
           </Box>
           <Box display={"flex"} flexDirection={"column"} gap={"xxs"}>
@@ -80,7 +82,7 @@ const Footer: React.FC = () => {
               color={"white"}
               marginBottom={"none"}
             >
-              {footerData?.data?.sponsorships}
+              {footer?.sponsorships}
             </Text>
           </Box>
         </Box>
@@ -100,7 +102,7 @@ const Footer: React.FC = () => {
             >
               Socials
             </Text>
-            <Socials socials={footerData?.data?.socialLinks} />
+            <Socials socials={footer?.socialLinks} />
           </Box>
           <Box display={"flex"} flexDirection={"column"} gap={"xxs"}>
             <Text
@@ -117,7 +119,7 @@ const Footer: React.FC = () => {
               color={"white"}
               marginBottom={"none"}
             >
-              {footerData?.data?.legals}
+              {footer?.legals}
             </Text>
           </Box>
         </Box>
