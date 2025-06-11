@@ -146,29 +146,9 @@ export const eiTheme: Theme = {
   },
 }
 
-// const colors = { ...eiTheme.colors } as const
-// type ColorUnion = keyof typeof colors
-// export type DarkColors = Extract<
-//   ColorUnion,
-//   `malm${"0" | "1"}` | `lav${"0" | "1"}` | `mossa${"0"}`
-// >
-// export type LightColors = Exclude<ColorUnion, DarkColors>
-
-// export type DynamicColorProperties =
-//   | {
-//       background: DarkColors
-//       color: "white"
-//     }
-//   | {
-//       background: LightColors
-//       color: "malm0"
-//     }
-
 export const themeVars = createGlobalTheme(":root", eiTheme)
 
 globalStyle("body", {
-  // fontFamily: eiTheme.fontFamilies.primary,
-  // fontSize: eiTheme.fontSizes.s,
   scrollbarWidth: "none",
   color: eiTheme.colors.shadow,
 })
@@ -178,4 +158,8 @@ globalStyle("*", {
   boxSizing: "border-box",
   margin: 0,
   transition: "all 0.2s ease-in-out",
+})
+
+globalStyle("h1, h2, h3, h4, h5, h6", {
+  fontFamily: eiTheme.fontFamilies.heading,
 })

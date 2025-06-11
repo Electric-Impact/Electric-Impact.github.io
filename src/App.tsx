@@ -3,9 +3,11 @@ import { BuilderComponent, builder, useIsPreviewing } from "@builder.io/react"
 import Footer from "./components/footer/Footer"
 import Nav from "./components/nav/Nav"
 import { Container } from "./atomic"
+import registerBuilderComponents from "./utils/register-builder-components"
 
 // Put your API key here
 builder.init("236f25c22ba94096b289a910d80952f1")
+registerBuilderComponents()
 
 // set whether you're using the Visual Editor,
 // whether there are changes,
@@ -51,10 +53,8 @@ const App: React.FC = () => {
   return (
     <>
       <Nav />
-      <Container>
         {/* Render the Builder page */}
         <BuilderComponent model="page" content={content} />
-      </Container>
       <Footer />
     </>
   )
