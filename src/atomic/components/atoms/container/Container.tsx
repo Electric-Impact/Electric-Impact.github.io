@@ -2,17 +2,13 @@ import React, { FC } from 'react'
 import { container } from './Container.css'
 import Box, { BoxProps } from '../box/Box'
 
-type ContainerProps = {
-  customWidth?: number
-} & BoxProps
-
-const Container: FC<ContainerProps> = ({ children, className, marginX = 'auto', paddingX = 'l', customWidth, ...props }) => {
+const Container: FC<BoxProps> = ({ children, className, marginX = 'auto', paddingX = 'l', maxWidth, ...props }) => {
   return (
     <Box
-      className={`${container[customWidth ? 'custom' : 'default']} ${className}`}
+      className={`${container[maxWidth ? 'custom' : 'default']} ${className}`}
       paddingX={paddingX}
       marginX={marginX}
-      style={customWidth ? { maxWidth: customWidth } : {}}
+      style={maxWidth ? { maxWidth: maxWidth } : {}}
       {...props}
     >
       {children}

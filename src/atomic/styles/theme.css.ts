@@ -3,6 +3,7 @@ import { createGlobalTheme, globalStyle } from "@vanilla-extract/css"
 export type ThemeColors = {
   transparent: string
   black: string
+  granite: string
   shadow: string
   stone: string
   electric: string
@@ -16,6 +17,7 @@ export type ThemeFontSizes = {
   l: string
   xl: string
   xxl: string
+  xxxl: string
 }
 
 export type ThemeSpaces = {
@@ -42,15 +44,16 @@ export type ThemeRadiuses = {
   s: string
   m: string
   l: string
+  xl: string
   full: string
 }
 
 export type ThemeFontWeights = {
   light: string
   normal: string
+  medium: string
   semibold: string
   bold: string
-  extrabold: string
 }
 
 export type ThemeBreakpoints = {
@@ -61,7 +64,6 @@ export type ThemeBreakpoints = {
 
 export type ButtonTypes = {
   primary: string
-  cta: string
   secondary: string
 }
 
@@ -82,7 +84,8 @@ export const eiTheme: Theme = {
   colors: {
     transparent: "transparent",
     black: "#000000",
-    shadow: "#202020",
+    granite: "#202020",
+    shadow: "#2B2B2B",
     stone: "#404040",
     electric: "#00AEFF",
     fog: "#AAAAAA",
@@ -94,11 +97,12 @@ export const eiTheme: Theme = {
     caption: 'Roboto Mono, monospace',
   },
   fontSizes: {
-    s: "clamp(1rem, 0.9712rem + 0.1282vw, 1.125rem)",
-    m: "clamp(1.333rem, 1.2945rem + 0.1709vw, 1.4996rem)",
-    l: "clamp(1.7769rem, 1.7256rem + 0.2278vw, 1.999rem)",
-    xl: "clamp(2.3686rem, 2.3003rem + 0.3037vw, 2.6647rem)",
-    xxl: "clamp(5.6102rem, 5.4484rem + 0.7193vw, 6.3115rem)",
+    s: "clamp(1rem, 1rem + 0vw, 1rem)",
+    m: "clamp(1.2rem, 1.0757rem + 0.5304vw, 1.5rem)",
+    l: "clamp(1.44rem, 1.1044rem + 1.432vw, 2.25rem)",
+    xl: "clamp(1.728rem, 1.0455rem + 2.9118vw, 3.375rem)",
+    xxl: "clamp(2.0736rem, 0.8351rem + 5.2842vw, 5.0625rem)",
+    xxxl: "clamp(2.4883rem, 0.3728rem + 9.0262vw, 7.5938rem)",
   },
   lineHeights: {
     s: '1.3em',
@@ -106,6 +110,7 @@ export const eiTheme: Theme = {
     l: '1.5em',
     xl: '1.6em',
     xxl: '1.9em',
+    xxxl: '2em',
   },
   spaces: {
     none: '0',
@@ -124,14 +129,15 @@ export const eiTheme: Theme = {
     s: '0.25rem',
     m: '0.5rem',
     l: '1rem',
+    xl: '2rem',
     full: '50%',
   },
   fontWeights: {
     light: '300',
     normal: '400',
+    medium: '500',
     semibold: '600',
-    bold: '700',
-    extrabold: '800',
+    bold: '800',
   },
   containerWidth: '77.5rem',
   breakpoints: {
@@ -140,7 +146,6 @@ export const eiTheme: Theme = {
     desktop: '1200px',
   },
   buttonTypes: {
-    cta: 'cta',
     primary: 'primary',
     secondary: 'secondary',
   },
@@ -150,7 +155,7 @@ export const themeVars = createGlobalTheme(":root", eiTheme)
 
 globalStyle("body", {
   scrollbarWidth: "none",
-  color: eiTheme.colors.shadow,
+  color: eiTheme.colors.granite,
 })
 
 globalStyle("*", {

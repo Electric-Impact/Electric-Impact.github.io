@@ -11,7 +11,7 @@ type TextProps = Omit<AllHTMLAttributes<HTMLParagraphElement>, 'className' | 'co
 
 const Text: FC<TextProps> = ({ as = 'p', children, lineHeight = 'm', ...props }) => {
   return (
-    <Box as={as} {...props} lineHeight={lineHeight}>
+    <Box as={as} lineHeight={lineHeight} {...props}>
       {children}
     </Box>
   )
