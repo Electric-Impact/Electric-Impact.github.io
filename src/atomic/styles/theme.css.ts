@@ -143,7 +143,7 @@ export const eiTheme: Theme = {
   breakpoints: {
     mobile: '0',
     tablet: '768px',
-    desktop: '1200px',
+    desktop: '1025px',
   },
   buttonTypes: {
     primary: 'primary',
