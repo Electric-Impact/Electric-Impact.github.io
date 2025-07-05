@@ -41,19 +41,19 @@ export const theme = styleVariants({
 export const size = styleVariants({
   s: {
     height: 36,
-  fontSize: eiTheme.fontSizes.s,
+    fontSize: eiTheme.fontSizes.s,
     paddingLeft: eiTheme.spaces.l,
     paddingRight: eiTheme.spaces.l,
   },
   m: {
     height: 42,
-  fontSize: eiTheme.fontSizes.s,
+    fontSize: eiTheme.fontSizes.s,
     paddingLeft: eiTheme.spaces.xl,
     paddingRight: eiTheme.spaces.xl,
   },
   l: {
     height: 48,
-  fontSize: eiTheme.fontSizes.s,
+    fontSize: eiTheme.fontSizes.s,
     paddingLeft: eiTheme.spaces.xxl,
     paddingRight: eiTheme.spaces.xxl,
   },

@@ -10,6 +10,9 @@ export type ButtonCustomProps = {
   variant: ButtonType
   cta: boolean
   size: ButtonSize
+  internalLink?: boolean
+  link?: string
+  externalLink?: string
   children: React.ReactNode
 }
 
@@ -23,9 +26,27 @@ const Button: React.FC<ButtonProps> = ({
   cta = true,
   size = "l",
   className,
+  internalLink,
+  link,
+  externalLink,
   ...props
 }) => {
   const [hovered, setHovered] = React.useState(false)
+
+  if (link) {
+    return (
+      <a style={{ textDecoration: "none" }} href={internalLink ? `?page=${link}` : externalLink} target="_blank" rel="noopener noreferrer">
+        <button
+        className={`${className} ${css.btn} ${css.theme[variant]} ${css.size[size]}`}
+        onMouseEnter={() => setHovered(true)}
+        onMouseLeave={() => setHovered(false)}
+        {...props}
+      >
+        {children} {cta && <Icons name="arrow" width={12} height={12} color={variant === 'primary' && !hovered ? "stone" : "electric"} />}
+      </button>
+      </a>
+    )
+  }
 
   return (
       <button

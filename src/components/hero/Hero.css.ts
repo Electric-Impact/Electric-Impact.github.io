@@ -5,6 +5,12 @@ export const container = style({
   minHeight: 480,
   height: "100%",
   width: "100%",
+  filter: "grayscale(1)",
+  transition: "filter 0.4s ease-in-out",
+
+  ":hover": {
+    filter: "grayscale(0)",
+  },
 
   "@media": {
     [`screen and (min-width: ${eiTheme.breakpoints.tablet})`]: {

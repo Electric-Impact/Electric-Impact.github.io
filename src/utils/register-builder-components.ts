@@ -3,6 +3,7 @@ import Hero from "../components/hero/Hero"
 import { eiTheme, themeVars } from "../atomic/styles/theme.css"
 import { Box, Container, Heading, Text } from "../atomic"
 import Button from "../components/button/Button"
+import Games from "../components/games/Games"
 
 const ALLOWED_IMAGE_FILE_TYPES = ["jpeg", "png", "jpg", "gif", "webp"]
 const MARGIN_PADDING_INPUTS = [
@@ -99,8 +100,16 @@ export default function registerBuilderComponents(): void {
       },
       { name: "display", type: "string", enum: ["block", "flex"] },
       { name: "flexDirection", type: "string", enum: ["row", "column"] },
-      { name: "alignItems", type: "string", enum: ["flex-start", "center", "flex-end"] },
-      { name: "justifyContent", type: "string", enum: ["flex-start", "center", "flex-end", "space-between"]},
+      {
+        name: "alignItems",
+        type: "string",
+        enum: ["flex-start", "center", "flex-end"],
+      },
+      {
+        name: "justifyContent",
+        type: "string",
+        enum: ["flex-start", "center", "flex-end", "space-between"],
+      },
       { name: "gap", type: "string", enum: [...Object.keys(themeVars.spaces)] },
     ],
   })
@@ -117,8 +126,16 @@ export default function registerBuilderComponents(): void {
       },
       { name: "display", type: "string", enum: ["block", "flex"] },
       { name: "flexDirection", type: "string", enum: ["row", "column"] },
-      { name: "alignItems", type: "string", enum: ["flex-start", "center", "flex-end"] },
-      { name: "justifyContent", type: "string", enum: ["flex-start", "center", "flex-end", "space-between"]},
+      {
+        name: "alignItems",
+        type: "string",
+        enum: ["flex-start", "center", "flex-end"],
+      },
+      {
+        name: "justifyContent",
+        type: "string",
+        enum: ["flex-start", "center", "flex-end", "space-between"],
+      },
       { name: "gap", type: "string", enum: [...Object.keys(themeVars.spaces)] },
       {
         name: "maxWidth",
@@ -200,17 +217,103 @@ export default function registerBuilderComponents(): void {
         defaultValue: "m",
         advanced: true,
       },
-      { name: "maxWidth", type: "number", advanced: true,},
+      { name: "maxWidth", type: "number", advanced: true },
     ],
   })
 
   Builder.registerComponent(Button, {
     name: "Button",
     inputs: [
-      { name: "variant", friendlyName: "Type", type: "string", enum: ["primary", "secondary"], defaultValue: "primary" },
-      { name: "cta", type: "boolean", friendlyName: "Call to action?", helperText: "Toggle this if the button is a CTA button", defaultValue: false },
-      { name: "size", type: "string", enum: ["s", "m", "l"], defaultValue: "l" },
+      {
+        name: "variant",
+        friendlyName: "Type",
+        type: "string",
+        enum: ["primary", "secondary"],
+        defaultValue: "primary",
+      },
+      {
+        name: "cta",
+        type: "boolean",
+        friendlyName: "Call to action?",
+        helperText: "Toggle this if the button is a CTA button",
+        defaultValue: false,
+      },
+      {
+        name: "size",
+        type: "string",
+        enum: ["s", "m", "l"],
+        defaultValue: "l",
+      },
+
+      {
+        name: "internalLink",
+        type: "boolean",
+        helperText: "Toggle for external link",
+        defaultValue: true,
+      },
+      {
+        name: "link",
+        type: "text",
+        regex: {
+          pattern: "^[a-z-]+$",
+          message:
+            "Please enter a valid URL containing only lowercase letters and hyphens",
+        },
+        showIf: `options.get('internalLink') === true`,
+      },
+      {
+        name: "externalLink",
+        type: "text",
+        showIf: `options.get('internalLink') === false`,
+      },
       { name: "children", type: "text", friendlyName: "Text" },
+    ],
+  })
+
+  Builder.registerComponent(Games, {
+    name: "Games",
+    inputs: [
+      ...MARGIN_PADDING_INPUTS,
+      {
+        name: "game",
+        type: "list",
+        subFields: [
+          {
+            name: "backgroundImage",
+            type: "file",
+            allowedFileTypes: ALLOWED_IMAGE_FILE_TYPES,
+          },
+          {
+            name: "logo",
+            type: "file",
+            allowedFileTypes: ALLOWED_IMAGE_FILE_TYPES,
+          },
+          { name: "buttonText", type: "text" },
+          {
+            name: "internalLink",
+            type: "boolean",
+            helperText: "Toggle for external link",
+            defaultValue: true,
+          },
+          {
+            name: "buttonLinkInternal",
+            friendlyName: "Button link",
+            type: "text",
+            regex: {
+              pattern: "^[a-z-]+$",
+              message:
+                "Please enter a valid URL containing only lowercase letters and hyphens",
+            },
+            showIf: `options.get('internalLink') === true`,
+          },
+          {
+            name: "buttonLinkExternal",
+            friendlyName: "Button link",
+            type: "text",
+            showIf: `options.get('internalLink') === false`,
+          },
+        ],
+      },
     ],
   })
 }

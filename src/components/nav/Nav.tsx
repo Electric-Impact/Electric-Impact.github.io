@@ -55,7 +55,7 @@ const Nav: React.FC = () => {
         gap={"m"}
       >
         {nav?.links?.map((link, index) => (
-          <Link key={index} href={link.link} className={css.text}>
+          <Link key={index} href={`?page=${link.link}`} className={css.text}>
             <Text fontFamily={"heading"} fontSize={"m"}>
               {link.label}
             </Text>
