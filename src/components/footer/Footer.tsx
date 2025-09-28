@@ -60,14 +60,16 @@ const Footer: React.FC = () => {
             >
               Email
             </Text>
-            <Text
-              fontFamily={"caption"}
-              fontSize={"s"}
-              color={"white"}
-              marginBottom={"none"}
-            >
-              {footer?.email}
-            </Text>
+            <Link href={`mailto:${footer?.email}`} style={{ textDecoration: 'none' }}>
+              <Text
+                fontFamily={"caption"}
+                fontSize={"s"}
+                color={"white"}
+                marginBottom={"none"}
+              >
+                {footer?.email}
+              </Text>
+            </Link>
           </Box>
           <Box display={"flex"} flexDirection={"column"} gap={"xxs"}>
             <Text
@@ -113,7 +115,7 @@ const Footer: React.FC = () => {
               color={"fog"}
               marginBottom={"none"}
             >
-              Download our Games 
+              Download our Games
             </Text>
             {/* <Text
               fontFamily={"caption"}
@@ -123,8 +125,17 @@ const Footer: React.FC = () => {
             >
               {footer?.location}
             </Text> */}
-            <Link href={footer?.downloadLink} role="button" target="_blank" aria-label="Download our games on Steam">
-              <Image src="/assets/images/steam_download.webp" width={96} alt="Download our games on Steam" />
+            <Link
+              href={footer?.downloadLink}
+              role="button"
+              target="_blank"
+              aria-label="Download our games on Steam"
+            >
+              <Image
+                src="/assets/images/steam_download.webp"
+                width={96}
+                alt="Download our games on Steam"
+              />
             </Link>
           </Box>
         </Box>
