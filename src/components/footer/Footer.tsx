@@ -3,10 +3,12 @@ import { Box, Container, Text } from "../../atomic"
 import Socials from "../socials/Socials"
 import { FooterData } from "../../context/LinkContext"
 import builder from "@builder.io/react"
+import Link from "../link/Link"
+import Image from "../image/Image"
 
 const Footer: React.FC = () => {
   const [footerData, setFooterData] = useState<FooterData>({
-    data: { email: "", sponsorships: "", socialLinks: [], legals: "" },
+    data: { email: "", socialLinks: [], location: "", downloadLink: "" },
   })
   // get the footer data from Builder
   useEffect(() => {
@@ -74,7 +76,7 @@ const Footer: React.FC = () => {
               color={"fog"}
               marginBottom={"none"}
             >
-              Sponsorships
+              Location
             </Text>
             <Text
               fontFamily={"caption"}
@@ -82,7 +84,7 @@ const Footer: React.FC = () => {
               color={"white"}
               marginBottom={"none"}
             >
-              {footer?.sponsorships}
+              {footer?.location}
             </Text>
           </Box>
         </Box>
@@ -111,16 +113,19 @@ const Footer: React.FC = () => {
               color={"fog"}
               marginBottom={"none"}
             >
-              Legals
+              Download our Games 
             </Text>
-            <Text
+            {/* <Text
               fontFamily={"caption"}
               fontSize={"s"}
               color={"white"}
               marginBottom={"none"}
             >
-              {footer?.legals}
-            </Text>
+              {footer?.location}
+            </Text> */}
+            <Link href={footer?.downloadLink} role="button" target="_blank" aria-label="Download our games on Steam">
+              <Image src="/assets/images/steam_download.webp" width={96} alt="Download our games on Steam" />
+            </Link>
           </Box>
         </Box>
       </Container>

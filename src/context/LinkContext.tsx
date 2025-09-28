@@ -3,9 +3,9 @@ import { SocialLink } from "../components/socials/Socials"
 export type FooterData = {
   data: {
     email: string
-    sponsorships: string
+    location: string
     socialLinks: SocialLink[]
-    legals: string
+    downloadLink: string
   }
 }
 

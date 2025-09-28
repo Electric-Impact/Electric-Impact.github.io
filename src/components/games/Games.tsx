@@ -4,6 +4,7 @@ import Image from "../image/Image"
 import Button from "../button/Button"
 import * as css from "./Games.css"
 import Link from "../link/Link"
+import { themeVars } from "../../atomic/styles/theme.css"
 
 type Game = {
   backgroundImage: string
@@ -37,7 +38,16 @@ const Games: React.FC<GamesProps> = ({ game, ...props }) => {
               : item.buttonLinkExternal ?? ""
           }
           style={{ width: "100%", textDecoration: "none" }}
+          className={css.zoomContainer}
         >
+          <Button
+              variant={"primary"}
+              cta={false}
+              size={"l"}
+              style={{ zIndex: 10, position: 'absolute', bottom: 130, left: '50%', transform: 'translateX(-50%)' }}
+            >
+              <Text as={"span"}>{item.buttonText}</Text>
+            </Button>
           <Box
             display={"flex"}
             flexDirection={"column"}
@@ -57,14 +67,9 @@ const Games: React.FC<GamesProps> = ({ game, ...props }) => {
               alt={"Logotype"}
               style={{ width: "100%", maxWidth: 420 }}
             />
-            <Button
-              variant={"primary"}
-              cta={false}
-              size={"l"}
-            >
-              <Text as={"span"}>{item.buttonText}</Text>
-            </Button>
+            
           </Box>
+          
         </Link>
       ))}
     </Box>

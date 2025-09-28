@@ -4,6 +4,7 @@ import { eiTheme, themeVars } from "../atomic/styles/theme.css"
 import { Box, Container, Heading, Text } from "../atomic"
 import Button from "../components/button/Button"
 import Games from "../components/games/Games"
+import Facts from "../components/facts/Facts"
 
 const ALLOWED_IMAGE_FILE_TYPES = ["jpeg", "png", "jpg", "gif", "webp"]
 const MARGIN_PADDING_INPUTS = [
@@ -73,7 +74,19 @@ export default function registerBuilderComponents(): void {
   Builder.registerComponent(Hero, {
     name: "Hero",
     inputs: [
+      {
+        name: "type",
+        type: "string",
+        enum: ["main", "secondary"],
+        defaultValue: "main",
+      },
       { name: "title", type: "text" },
+      {
+        name: "color",
+        type: "string",
+        enum: [...Object.keys(eiTheme.colors)],
+        defaultValue: "white",
+      },
       {
         name: "backgroundImage",
         type: "file",
@@ -313,6 +326,32 @@ export default function registerBuilderComponents(): void {
             showIf: `options.get('internalLink') === false`,
           },
         ],
+      },
+    ],
+  })
+
+  Builder.registerComponent(Facts, {
+    name: "Facts",
+    inputs: [
+      ...MARGIN_PADDING_INPUTS,
+      {
+        name: "fact",
+        type: "list",
+        subFields: [
+          { name: "title", type: "text", defaultValue: "Title goes here" },
+          {
+            name: "description",
+            type: "longText",
+            defaultValue: "Text goes here",
+          },
+        ],
+      },
+      {
+        name: "color",
+        friendlyName: "Text Color",
+        type: "string",
+        enum: [...Object.keys(eiTheme.colors)],
+        defaultValue: "white",
       },
     ],
   })

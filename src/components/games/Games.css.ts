@@ -1,6 +1,22 @@
 import { style } from "@vanilla-extract/css"
 import { eiTheme } from "../../atomic/styles/theme.css"
 
+export const zoomContainer = style({
+  overflow: 'hidden',
+  position: 'relative',
+  height: 600,
+
+  "@media": {
+    [`screen and (min-width: ${eiTheme.breakpoints.tablet})`]: {
+      height: 550,
+    },
+
+    [`screen and (min-width: ${eiTheme.breakpoints.desktop})`]: {
+      height: 800,
+    },
+  },
+})
+
 export const gameContainer = style({
   minHeight: 600,
 
@@ -12,9 +28,10 @@ export const gameContainer = style({
     [`screen and (min-width: ${eiTheme.breakpoints.desktop})`]: {
       minHeight: 800,
       filter: "grayscale(1)",
-      transition: "filter 0.4s ease-in-out",
+      transition: "filter transform 0.4s ease-in-out",
       ":hover": {
         filter: "grayscale(0)",
+        transform: "scale(1.20)",
       },
     },
   },
