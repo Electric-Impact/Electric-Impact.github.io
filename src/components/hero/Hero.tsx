@@ -2,8 +2,7 @@ import React from "react"
 import * as css from "./Hero.css"
 import { Box, Heading } from "../../atomic"
 import Image from "../image/Image"
-import { eiTheme, ThemeColors } from "../../atomic/styles/theme.css"
-import { useMediaQuery } from "react-responsive"
+import { ThemeColors } from "../../atomic/styles/theme.css"
 
 type HeroProps = {
   type: "main" | "secondary"
@@ -11,7 +10,6 @@ type HeroProps = {
   backgroundImage?: string
   image?: string
   color?: keyof ThemeColors
-  blackwhite?: boolean
 }
 
 const Hero: React.FC<HeroProps> = ({
@@ -20,11 +18,8 @@ const Hero: React.FC<HeroProps> = ({
   color = "white",
   backgroundImage,
   image,
-  blackwhite = true,
   ...props
 }) => {
-  const isDesktop = useMediaQuery({ minWidth: eiTheme.breakpoints.desktop })
-
   return (
     <Box
       display={"flex"}
@@ -32,7 +27,6 @@ const Hero: React.FC<HeroProps> = ({
       alignItems={"center"}
       justifyContent={type === "secondary" ? "flex-end" : "center"}
       paddingBottom={type === "secondary" ? "l" : "none"}
-      className={css.container[type]}
       style={{
         backgroundImage: backgroundImage
           ? `url(${backgroundImage})`
@@ -40,8 +34,8 @@ const Hero: React.FC<HeroProps> = ({
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        filter: blackwhite && isDesktop ? "grayscale(1)" : "none",
       }}
+      className={css.container[type]}
     >
       {image && <Image src={image} alt={"Logo"} className={css.image[type]} />}
       {title && (

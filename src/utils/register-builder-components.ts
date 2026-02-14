@@ -9,7 +9,6 @@ import SubHero from "../components/sub_hero/SubHero"
 import TextComponent from "../components/text_component/TextComponent"
 import ContentDivider from "../components/content_divider/ContentDivider"
 import Character from "../components/character/Character"
-import DashNews from "../components/dash_news/DashNews"
 
 const ALLOWED_IMAGE_FILE_TYPES = ["jpeg", "png", "jpg", "gif", "webp"]
 const MARGIN_PADDING_INPUTS = [
@@ -96,12 +95,6 @@ export default function registerBuilderComponents(): void {
         name: "backgroundImage",
         type: "file",
         allowedFileTypes: ALLOWED_IMAGE_FILE_TYPES,
-      },
-      {
-        name: 'blackwhite',
-        friendlyName: 'Black and white image?',
-        type: 'boolean',
-        defaultValue: true,
       },
       {
         name: "image",
@@ -491,13 +484,6 @@ export default function registerBuilderComponents(): void {
         type: "boolean",
         defaultValue: false,
       },
-    ],
-  })
-
-  Builder.registerComponent(DashNews, {
-    name: "DashNews",
-    inputs: [
-      ...MARGIN_PADDING_INPUTS,
     ],
   })
 }
