@@ -2,24 +2,33 @@ import { style } from "@vanilla-extract/css"
 import { eiTheme, themeVars } from "../../atomic/styles/theme.css"
 
 export const container = style({
-  border: "none",
+  display: "flex",
+  flexDirection: "column",
+  gap: themeVars.spaces.l,
+  
+  "@media": {
+    [`screen and (min-width: ${eiTheme.breakpoints.desktop})`]: {
+      display: "grid",
+      gridTemplateColumns: "1fr 1fr 1fr",
+      gap: themeVars.spaces.xl,
+    },
+  },
+})
 
-        paddingRight: 0,
+export const factsContainer = style({
+  border: "none",
+  paddingRight: 0,
 
   "@media": {
-    [`screen and (min-width: ${eiTheme.breakpoints.tablet})`]: {
+    [`screen and (min-width: ${eiTheme.breakpoints.desktop})`]: {
       borderRight: `1px solid ${themeVars.colors.fog}`,
-      paddingRight: themeVars.spaces.m,
+      paddingRight: themeVars.spaces.l,
       gap: themeVars.spaces.xl,
 
       ":last-child": {
         border: "none",
         paddingRight: 0,
       },
-    },
-    [`screen and (min-width: ${eiTheme.breakpoints.desktop})`]: {
-
-      paddingRight: themeVars.spaces.xxl,
     },
   },
 })

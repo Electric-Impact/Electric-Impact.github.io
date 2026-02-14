@@ -17,6 +17,8 @@ const App: React.FC = () => {
   const [notFound, setNotFound] = useState(false)
   const [content, setContent] = useState()
 
+  const builderCache = { cacheSeconds: 0, staleCacheSeconds: 0 }
+  
   // get the page content from Builder
   useEffect(() => {
     async function fetchContent() {
@@ -25,6 +27,7 @@ const App: React.FC = () => {
       const content = await builder
         .get("page", {
           url: !page ? window.location.pathname : `/${page}`,
+          ...builderCache,
         })
         .promise()
 
@@ -36,7 +39,6 @@ const App: React.FC = () => {
       if (content?.data.title) {
         document.title = content.data.title
       }
-
     }
     fetchContent()
   }, [window.location.pathname])
@@ -53,8 +55,8 @@ const App: React.FC = () => {
   return (
     <>
       <Nav />
-        {/* Render the Builder page */}
-        <BuilderComponent model="page" content={content} />
+      {/* Render the Builder page */}
+      <BuilderComponent model="page" content={content} />
       <Footer />
     </>
   )

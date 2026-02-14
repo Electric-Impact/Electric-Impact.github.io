@@ -12,7 +12,6 @@ export const btn = style({
   fontWeight: eiTheme.fontWeights.semibold,
   transition:
     "background cubic-bezier(0.4, 0, 0.2, 1) 200ms, border cubic-bezier(0.4, 0, 0.2, 1) 200ms",
-  borderRadius: eiTheme.borderRadiuses.xl,
 })
 
 export const theme = styleVariants({

@@ -1,3 +1,4 @@
+/* eslint-disable no-useless-computed-key */
 import { createGlobalTheme, globalStyle } from "@vanilla-extract/css"
 
 export type ThemeColors = {
@@ -31,6 +32,8 @@ export type ThemeSpaces = {
   xl: string
   xxl: string
   xxxl: string
+  ['l-xxl']: string
+  ['l-xxxl']: string
 }
 
 export type ThemeFontFamilies = {
@@ -60,6 +63,7 @@ export type ThemeBreakpoints = {
   mobile: string
   tablet: string
   desktop: string
+  largeDesktop: string
 }
 
 export type ButtonTypes = {
@@ -123,6 +127,8 @@ export const eiTheme: Theme = {
     xl: 'clamp(2.25rem, 2.1544rem + 0.3922vw, 2.625rem)',
     xxl: 'clamp(3rem, 2.8725rem + 0.5229vw, 3.5rem)',
     xxxl: 'clamp(4.5rem, 4.3088rem + 0.7843vw, 5.25rem)',
+    ['l-xxl']: 'clamp(2rem, 1.3627rem + 2.6144vw, 4.5rem)',
+    ['l-xxxl']: 'clamp(2rem, 0.7892rem + 4.9673vw, 6.75rem)',
   },
   borderRadiuses: {
     none: '0',
@@ -144,6 +150,7 @@ export const eiTheme: Theme = {
     mobile: '0',
     tablet: '768px',
     desktop: '1025px',
+    largeDesktop: '1440px',
   },
   buttonTypes: {
     primary: 'primary',
@@ -159,6 +166,7 @@ globalStyle("body", {
 })
 
 globalStyle("*", {
+  scrollbarWidth: "none",
   fontFamily: "inherit",
   boxSizing: "border-box",
   margin: 0,
@@ -167,4 +175,14 @@ globalStyle("*", {
 
 globalStyle("h1, h2, h3, h4, h5, h6", {
   fontFamily: eiTheme.fontFamilies.heading,
+})
+
+globalStyle("::-webkit-scrollbar", {
+  display: "none",
+  width: 0,
+  height: 0,
+})
+
+globalStyle("li", {
+  marginBottom: themeVars.spaces.xs,
 })

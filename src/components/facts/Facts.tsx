@@ -2,7 +2,6 @@ import React from "react"
 import { Box, Container, Text } from "../../atomic"
 import { ThemeColors } from "../../atomic/styles/theme.css"
 import * as css from "./Facts.css"
-import Image from "../image/Image"
 
 type FactsItem = {
   title: string
@@ -17,23 +16,16 @@ type FactsProps = {
 const Facts: React.FC<FactsProps> = ({ fact, color, ...props }) => {
   return (
     <Box position={"relative"}>
-      <Container
-        display={"flex"}
-        flexDirection={{ mobile: "column", tablet: "row" }}
-        wrap={"wrap"}
-        justifyContent={"space-between"}
-        gap={{ mobile: "xxl", tablet: 's', desktop: "xl" }}
-        {...props}
-      >
+      <Container className={css.container} {...props}>
         {fact?.map((item, index) => (
           <Box
             key={index}
             display={"flex"}
-            alignItems={"center"}
-            justifyContent={"center"}
             flexDirection={"column"}
+            alignItems={"center"}
+            justifyContent={"flex-start"}
             gap={"s"}
-            className={css.container}
+            className={css.factsContainer}
           >
             <Text
               fontFamily={"caption"}
@@ -45,20 +37,15 @@ const Facts: React.FC<FactsProps> = ({ fact, color, ...props }) => {
             >
               {item.title}
             </Text>
-            <Text
-              textAlign={"center"}
+            <Box
               fontSize={"m"}
               fontWeight={"normal"}
               color={"fog"}
-            >
-              {item.description}
-            </Text>
+              dangerouslySetInnerHTML={{ __html: item.description }}
+            />
           </Box>
         ))}
       </Container>
-      {/* <Box position={"absolute"}>
-        <Image src={"/assets/images/helga.webp"} alt={"The character Helga from the game Dash n smash"}  />
-      </Box> */}
     </Box>
   )
 }

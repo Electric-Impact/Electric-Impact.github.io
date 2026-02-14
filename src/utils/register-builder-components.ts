@@ -1,10 +1,14 @@
 import { Builder, withChildren } from "@builder.io/react"
 import Hero from "../components/hero/Hero"
 import { eiTheme, themeVars } from "../atomic/styles/theme.css"
-import { Box, Container, Heading, Text } from "../atomic"
+import { Box, Container, Heading } from "../atomic"
 import Button from "../components/button/Button"
 import Games from "../components/games/Games"
 import Facts from "../components/facts/Facts"
+import SubHero from "../components/sub_hero/SubHero"
+import TextComponent from "../components/text_component/TextComponent"
+import ContentDivider from "../components/content_divider/ContentDivider"
+import Character from "../components/character/Character"
 
 const ALLOWED_IMAGE_FILE_TYPES = ["jpeg", "png", "jpg", "gif", "webp"]
 const MARGIN_PADDING_INPUTS = [
@@ -124,6 +128,12 @@ export default function registerBuilderComponents(): void {
         enum: ["flex-start", "center", "flex-end", "space-between"],
       },
       { name: "gap", type: "string", enum: [...Object.keys(themeVars.spaces)] },
+      {
+        name: "position",
+        type: "string",
+        enum: ["relative", "absolute"],
+        defaultValue: "relative",
+      },
     ],
   })
 
@@ -156,6 +166,12 @@ export default function registerBuilderComponents(): void {
         helperText:
           "Set a max width for the container, leave empty for default width",
       },
+      {
+        name: "position",
+        type: "string",
+        enum: ["relative", "absolute"],
+        defaultValue: "relative",
+      },
     ],
   })
 
@@ -186,12 +202,12 @@ export default function registerBuilderComponents(): void {
     ],
   })
 
-  Builder.registerComponent(Text, {
+  Builder.registerComponent(TextComponent, {
     name: "TextComponent",
     friendlyName: "Text",
     inputs: [
       ...MARGIN_PADDING_INPUTS,
-      { name: "children", type: "longText", friendlyName: "Text" },
+      { name: "children", type: "richText", friendlyName: "Text" },
       {
         name: "fontFamily",
         type: "string",
@@ -341,7 +357,7 @@ export default function registerBuilderComponents(): void {
           { name: "title", type: "text", defaultValue: "Title goes here" },
           {
             name: "description",
-            type: "longText",
+            type: "richText",
             defaultValue: "Text goes here",
           },
         ],
@@ -352,6 +368,121 @@ export default function registerBuilderComponents(): void {
         type: "string",
         enum: [...Object.keys(eiTheme.colors)],
         defaultValue: "white",
+      },
+    ],
+  })
+
+  Builder.registerComponent(withChildren(ContentDivider), {
+    name: "ContentDivider",
+    inputs: [...MARGIN_PADDING_INPUTS],
+  })
+
+  Builder.registerComponent(Character, {
+    name: "Character",
+    inputs: [
+      ...MARGIN_PADDING_INPUTS,
+      {
+        name: "character",
+        friendlyName: "Choose character",
+        type: "string",
+        enum: [
+          "bosef",
+          "booger",
+          "bounce",
+          "helga",
+          "pegleg",
+          "rocket",
+          "shaman",
+          "toilet",
+        ],
+      },
+      {
+        name: "size",
+        type: "number",
+        helperText: "Set the width of the character image in pixels",
+        defaultValue: 373,
+      },
+      {
+        name: "flipCharacter",
+        friendlyName: "Flip character image?",
+        type: "boolean",
+        defaultValue: false,
+      },
+      {
+        name: "positionY",
+        friendlyName: "Characters position from top",
+        type: "range",
+        defaultValue: 0,
+        min: 0,
+        max: 100,
+      },
+      {
+        name: "positionX",
+        friendlyName: "Characters position from left",
+        type: "range",
+        defaultValue: 0,
+        min: 0,
+        max: 100,
+      },
+    ],
+  })
+
+  Builder.registerComponent(SubHero, {
+    name: "SubHero",
+    inputs: [
+      ...MARGIN_PADDING_INPUTS,
+      {
+        name: "backgroundColor",
+        type: "string",
+        enum: [...Object.keys(eiTheme.colors)],
+        defaultValue: "black",
+      },
+      {
+        name: "title",
+        type: "text",
+        defaultValue: "Title goes here",
+      },
+      {
+        name: "intro",
+        type: "longText",
+        defaultValue: "Intro goes here",
+      },
+      {
+        name: "buttonLink",
+        type: "text",
+        defaultValue: "/",
+      },
+      {
+        name: "buttonLabel",
+        type: "text",
+        defaultValue: "Click me",
+      },
+      {
+        name: "internalLink",
+        type: "boolean",
+        helperText: "Toggle for internal link",
+        defaultValue: false,
+      },
+      {
+        name: "character",
+        friendlyName: "Choose character",
+        type: "string",
+        enum: [
+          "bosef",
+          "booger",
+          "bounce",
+          "helga",
+          "pegleg",
+          "rocket",
+          "shaman",
+          "toilet",
+        ],
+      },
+      {
+        name: "flipCharacter",
+        friendlyName: "Flip character image?",
+        type: "boolean",
+        defaultValue: false,
       },
     ],
   })

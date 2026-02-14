@@ -5,6 +5,7 @@ import { FooterData } from "../../context/LinkContext"
 import builder from "@builder.io/react"
 import Link from "../link/Link"
 import Image from "../image/Image"
+import Divider from "../divider/Divider"
 
 const Footer: React.FC = () => {
   const [footerData, setFooterData] = useState<FooterData>({
@@ -22,102 +23,107 @@ const Footer: React.FC = () => {
   const footer = footerData?.data
 
   return (
-    <Box
-      display={"flex"}
-      alignItems={"flex-end"}
-      justifyContent={"center"}
-      padding={"l"}
-      style={{
-        width: "100%",
-        backgroundImage: "url('/assets/images/footer.webp')",
-        backgroundSize: "cover",
-        backgroundPosition: "center",
-        height: 520,
-      }}
-    >
-      <Container
+    <Box position={"relative"}>
+      <Divider />
+      <Box
         display={"flex"}
-        flexDirection={{ mobile: "column", tablet: "row" }}
-        alignItems={"flex-start"}
-        padding={"m"}
-        backgroundColor={"black"}
-        style={{ width: "100%" }}
-        borderRadius={"l"}
-        gap={"m"}
+        alignItems={"flex-end"}
+        justifyContent={"center"}
+        padding={"l"}
+        style={{
+          width: "100%",
+          backgroundImage: "url('/assets/images/footer.webp')",
+          backgroundSize: "cover",
+          backgroundPosition: "center",
+          height: 520,
+        }}
       >
-        <Box
+        <Container
           display={"flex"}
-          flexDirection={"column"}
-          gap={"m"}
+          flexDirection={{ mobile: "column", tablet: "row" }}
+          alignItems={"flex-start"}
+          padding={"m"}
+          backgroundColor={"black"}
           style={{ width: "100%" }}
+          borderRadius={"l"}
+          gap={"m"}
         >
-          <Box display={"flex"} flexDirection={"column"} gap={"xxs"}>
-            <Text
-              fontFamily={"caption"}
-              fontSize={"s"}
-              color={"fog"}
-              marginBottom={"none"}
-            >
-              Email
-            </Text>
-            <Link href={`mailto:${footer?.email}`} style={{ textDecoration: 'none' }}>
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            gap={"m"}
+            style={{ width: "100%" }}
+          >
+            <Box display={"flex"} flexDirection={"column"} gap={"xxs"}>
+              <Text
+                fontFamily={"caption"}
+                fontSize={"s"}
+                color={"fog"}
+                marginBottom={"none"}
+              >
+                Email
+              </Text>
+              <Link
+                href={`mailto:${footer?.email}`}
+                style={{ textDecoration: "none" }}
+              >
+                <Text
+                  fontFamily={"caption"}
+                  fontSize={"s"}
+                  color={"white"}
+                  marginBottom={"none"}
+                >
+                  {footer?.email}
+                </Text>
+              </Link>
+            </Box>
+            <Box display={"flex"} flexDirection={"column"} gap={"xxs"}>
+              <Text
+                fontFamily={"caption"}
+                fontSize={"s"}
+                color={"fog"}
+                marginBottom={"none"}
+              >
+                Location
+              </Text>
               <Text
                 fontFamily={"caption"}
                 fontSize={"s"}
                 color={"white"}
                 marginBottom={"none"}
               >
-                {footer?.email}
+                {footer?.location}
               </Text>
-            </Link>
+            </Box>
           </Box>
-          <Box display={"flex"} flexDirection={"column"} gap={"xxs"}>
-            <Text
-              fontFamily={"caption"}
-              fontSize={"s"}
-              color={"fog"}
-              marginBottom={"none"}
-            >
-              Location
-            </Text>
-            <Text
-              fontFamily={"caption"}
-              fontSize={"s"}
-              color={"white"}
-              marginBottom={"none"}
-            >
-              {footer?.location}
-            </Text>
-          </Box>
-        </Box>
 
-        <Box
-          display={"flex"}
-          flexDirection={"column"}
-          gap={"m"}
-          style={{ width: "100%" }}
-        >
-          <Box display={"flex"} flexDirection={"column"} gap={"xxs"}>
-            <Text
-              fontFamily={"caption"}
-              fontSize={"s"}
-              color={"fog"}
-              marginBottom={"none"}
-            >
-              Socials
-            </Text>
-            <Socials socials={footer?.socialLinks} />
-          </Box>
-          <Box display={"flex"} flexDirection={"column"} gap={"xxs"}>
-            <Text
-              fontFamily={"caption"}
-              fontSize={"s"}
-              color={"fog"}
-              marginBottom={"none"}
-            >
-              Download our Games
-            </Text>
-            {/* <Text
+          <Box
+            display={"flex"}
+            flexDirection={"column"}
+            gap={"m"}
+            style={{ width: "100%" }}
+          >
+            <Box display={"flex"} flexDirection={"column"} gap={"xxs"}>
+              <Text
+                fontFamily={"caption"}
+                fontSize={"s"}
+                color={"fog"}
+                marginBottom={"none"}
+              >
+                Socials
+              </Text>
+              <Socials socials={footer?.socialLinks} />
+            </Box>
+            <Box display={"flex"} flexDirection={"column"} gap={"xxs"}>
+              <Text
+                fontFamily={"caption"}
+                fontSize={"s"}
+                color={"fog"}
+                marginBottom={"none"}
+              >
+                Download our Games
+              </Text>
+              {/* <Text
               fontFamily={"caption"}
               fontSize={"s"}
               color={"white"}
@@ -125,21 +131,22 @@ const Footer: React.FC = () => {
             >
               {footer?.location}
             </Text> */}
-            <Link
-              href={footer?.downloadLink}
-              role="button"
-              target="_blank"
-              aria-label="Download our games on Steam"
-            >
-              <Image
-                src="/assets/images/steam_download.webp"
-                width={96}
-                alt="Download our games on Steam"
-              />
-            </Link>
+              <Link
+                href={footer?.downloadLink}
+                role="button"
+                target="_blank"
+                aria-label="Download our games on Steam"
+              >
+                <Image
+                  src="/assets/images/steam_download.webp"
+                  width={96}
+                  alt="Download our games on Steam"
+                />
+              </Link>
+            </Box>
           </Box>
-        </Box>
-      </Container>
+        </Container>
+      </Box>
     </Box>
   )
 }

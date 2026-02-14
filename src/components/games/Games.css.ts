@@ -19,6 +19,7 @@ export const zoomContainer = style({
 
 export const gameContainer = style({
   minHeight: 600,
+  cursor: "pointer",
 
   "@media": {
     [`screen and (min-width: ${eiTheme.breakpoints.tablet})`]: {
@@ -35,4 +36,9 @@ export const gameContainer = style({
       },
     },
   },
+})
+
+export const divider = style({
+  top: 0,
+  transform: "translateY(-50%)",
 })

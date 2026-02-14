@@ -1,4 +1,4 @@
-import { style, styleVariants } from "@vanilla-extract/css"
+import { styleVariants } from "@vanilla-extract/css"
 import { eiTheme } from "../../atomic/styles/theme.css"
 
 export const container = styleVariants({
@@ -25,36 +25,30 @@ export const container = styleVariants({
     width: "100%",
     height: 167,
 
-     "@media": {
-        [`screen and (min-width: ${eiTheme.breakpoints.tablet})`]: {
+    "@media": {
+      [`screen and (min-width: ${eiTheme.breakpoints.tablet})`]: {
         height: 373,
       },
       [`screen and (min-width: ${eiTheme.breakpoints.desktop})`]: {
         height: 800,
       },
-     },
+    },
   },
 })
 
 export const image = styleVariants({
   main: {
-  maxHeight: 367,
-  height: "100%",
+    maxHeight: 367,
+    height: "100%",
 
-  "@media": {
-    [`screen and (min-width: ${eiTheme.breakpoints.tablet})`]: {
-      maxHeight: 650,
+    "@media": {
+      [`screen and (min-width: ${eiTheme.breakpoints.tablet})`]: {
+        maxHeight: 650,
+      },
     },
-  },
   },
   secondary: {
     width: "100%",
-  height: "100%",
-
-  // "@media": {
-  //   [`screen and (min-width: ${eiTheme.breakpoints.tablet})`]: {
-  //     maxHeight: 650,
-  //   },
-  // },
+    height: "100%",
   },
 })

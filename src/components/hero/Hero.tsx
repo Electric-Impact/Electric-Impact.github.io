@@ -25,8 +25,8 @@ const Hero: React.FC<HeroProps> = ({
       display={"flex"}
       flexDirection={"column"}
       alignItems={"center"}
-      justifyContent={type === 'secondary' ? 'flex-end' : "center"}
-      paddingBottom={ type === 'secondary' ? 'l' : 'none' }
+      justifyContent={type === "secondary" ? "flex-end" : "center"}
+      paddingBottom={type === "secondary" ? "l" : "none"}
       style={{
         backgroundImage: backgroundImage
           ? `url(${backgroundImage})`
@@ -38,7 +38,11 @@ const Hero: React.FC<HeroProps> = ({
       className={css.container[type]}
     >
       {image && <Image src={image} alt={"Logo"} className={css.image[type]} />}
-      {title && <Heading as={"h1"} color={color}>{title}</Heading>}
+      {title && (
+        <Heading as={"h1"} color={color}>
+          {title}
+        </Heading>
+      )}
     </Box>
   )
 }

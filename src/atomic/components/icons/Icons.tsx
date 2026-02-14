@@ -1,8 +1,9 @@
 import { FC } from "react"
 import { ThemeColors } from "../../styles/theme.css"
 import Arrow from "./Arrow"
+import BlixtDivider from "./BlixtDivider"
 
-export const iconTypes = ["arrow"]
+export const iconTypes = ["arrow", "blixt-divider"] as const
 
 export type IconType = (typeof iconTypes)[number]
 
@@ -21,6 +22,7 @@ const Icons: FC<IconPropTypes> = ({
   className,
   width,
   height,
+  style,
 }) => {
   switch (name) {
     case "arrow":
@@ -30,6 +32,16 @@ const Icons: FC<IconPropTypes> = ({
           color={color}
           width={width}
           height={height}
+        />
+      )
+    case "blixt-divider":
+      return (
+        <BlixtDivider
+          className={className}
+          color={color}
+          width={width}
+          height={height}
+          style={style}
         />
       )
     default:
