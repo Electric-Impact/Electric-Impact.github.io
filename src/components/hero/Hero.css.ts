@@ -12,7 +12,7 @@ export const container = styleVariants({
         minHeight: 710,
       },
       [`screen and (min-width: ${eiTheme.breakpoints.desktop})`]: {
-        filter: "grayscale(1)",
+        // filter: "grayscale(1)",
         transition: "filter 0.4s ease-in-out",
 
         ":hover": {
