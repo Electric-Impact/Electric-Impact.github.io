@@ -4,7 +4,7 @@ import Divider from "../divider/Divider"
 
 const ContentDivider: React.FC = () => {
   return (
-    <Box position={"relative"}>
+    <Box position={"relative"} style={{zIndex: 4}}>
       <Divider />
     </Box>
   )
