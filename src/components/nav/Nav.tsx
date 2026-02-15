@@ -108,7 +108,7 @@ const Nav: React.FC = () => {
         >
           <ul className={css.navLinksContainer}>
             <li className={css.navLinks}>
-              <Link href={"/"} className={css.text}>
+              <Link href={"/"} className={css.mobileText}>
                 <Text
                   fontFamily={"caption"}
                   fontSize={"s"}
@@ -124,7 +124,7 @@ const Nav: React.FC = () => {
             </li>
             {nav?.links?.map((link, index) => (
               <li key={index} className={css.navLinks}>
-                <Link href={link.link} className={css.text}>
+                <Link href={link.link} className={css.mobileText}>
                   <Text
                     fontFamily={"caption"}
                     fontSize={"s"}
