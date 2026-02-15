@@ -2,10 +2,6 @@ import { style } from "@vanilla-extract/css"
 import { themeVars } from "../../atomic/styles/theme.css"
 
 export const text = style({
-  display: "flex",
-  flexDirection: "row",
-  alignItems: "center",
-  justifyContent: "space-between",
   color: themeVars.colors.white,
   textDecoration: "none",
 
@@ -50,5 +46,19 @@ export const navLinks = style({
 
   ":last-child": {
     borderBottom: "none",
+  },
+})
+
+export const mobileText = style({
+  display: "flex",
+  flexDirection: "row",
+  alignItems: "center",
+  justifyContent: "space-between",
+  width: "100%",
+  color: themeVars.colors.white,
+  textDecoration: "none",
+
+  ":hover": {
+    opacity: 0.7,
   },
 })
