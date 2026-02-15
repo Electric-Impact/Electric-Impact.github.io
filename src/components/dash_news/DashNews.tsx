@@ -1,7 +1,6 @@
 /* eslint-disable jsx-a11y/iframe-has-title */
 import React from "react"
 import { Box, Container } from "../../atomic"
-import Divider from "../divider/Divider"
 
 type DashNewsProps = {
   width?: number

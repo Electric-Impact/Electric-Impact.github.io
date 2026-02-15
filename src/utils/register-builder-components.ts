@@ -5,13 +5,13 @@ import { Box, Container, Heading } from "../atomic"
 import Button from "../components/button/Button"
 import Games from "../components/games/Games"
 import Facts from "../components/facts/Facts"
-import SubHero from "../components/sub_hero/SubHero"
 import TextComponent from "../components/text_component/TextComponent"
 import ContentDivider from "../components/content_divider/ContentDivider"
 import Character from "../components/character/Character"
 import DashNews from "../components/dash_news/DashNews"
 import Socials from "../components/socials/Socials"
 import { socialIconTypes } from "../atomic/components/icons/SocialsIcon"
+import GameInfo from "../components/game_info/GameInfo"
 
 const ALLOWED_IMAGE_FILE_TYPES = ["jpeg", "png", "jpg", "gif", "webp"]
 const MARGIN_PADDING_INPUTS = [
@@ -113,66 +113,6 @@ export default function registerBuilderComponents(): void {
     ],
   })
 
-  Builder.registerComponent(SubHero, {
-    name: "SubHero",
-    inputs: [
-      ...MARGIN_PADDING_INPUTS,
-      {
-        name: "backgroundColor",
-        type: "string",
-        enum: [...Object.keys(eiTheme.colors)],
-        defaultValue: "black",
-      },
-      {
-        name: "title",
-        type: "text",
-        defaultValue: "Title goes here",
-      },
-      {
-        name: "intro",
-        type: "longText",
-        defaultValue: "Intro goes here",
-      },
-      {
-        name: "buttonLink",
-        type: "text",
-        defaultValue: "/",
-      },
-      {
-        name: "buttonLabel",
-        type: "text",
-        defaultValue: "Click me",
-      },
-      {
-        name: "internalLink",
-        type: "boolean",
-        helperText: "Toggle for internal link",
-        defaultValue: false,
-      },
-      {
-        name: "character",
-        friendlyName: "Choose character",
-        type: "string",
-        enum: [
-          "bosef",
-          "booger",
-          "bounce",
-          "helga",
-          "pegleg",
-          "rocket",
-          "shaman",
-          "toilet",
-        ],
-      },
-      {
-        name: "flipCharacter",
-        friendlyName: "Flip character image?",
-        type: "boolean",
-        defaultValue: false,
-      },
-    ],
-  })
-
   Builder.registerComponent(Games, {
     name: "Games",
     inputs: [
@@ -253,6 +193,16 @@ export default function registerBuilderComponents(): void {
     ],
   })
 
+  Builder.registerComponent(GameInfo, {
+    name: "GameInfo",
+    inputs: [
+      ...MARGIN_PADDING_INPUTS,
+      {name: "genre", type: "text", defaultValue: "Genre goes here"},
+      {name: "releaseDate", type: "text", defaultValue: "Release date goes here"},
+      {name: "platform", type: "text", defaultValue: "Platform goes here"},
+    ],
+  })
+
   Builder.registerComponent(Character, {
     name: "Character",
     inputs: [
@@ -299,6 +249,12 @@ export default function registerBuilderComponents(): void {
         defaultValue: 0,
         min: 0,
         max: 100,
+      },
+      {
+        name: "hideOnMobile",
+        friendlyName: "Hide on mobile devices?",
+        type: "boolean",
+        defaultValue: false,
       },
     ],
   })
@@ -454,11 +410,6 @@ export default function registerBuilderComponents(): void {
       {
         name: "link",
         type: "text",
-        regex: {
-          pattern: "^[a-z-]+$",
-          message:
-            "Please enter a valid URL containing only lowercase letters and hyphens",
-        },
         showIf: `options.get('internalLink') === true`,
       },
       {

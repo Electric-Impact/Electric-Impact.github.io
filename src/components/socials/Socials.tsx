@@ -65,8 +65,8 @@ const Socials: React.FC<SocialLinkProps> = ({
         >
           <SocialIcon
             name={icon.icon}
-            width={iconSize}
-            height={iconSize}
+            width={icon.icon === "wishlist-steam" ? 96 : iconSize}
+            height={icon.icon === "wishlist-steam" ? 32 : iconSize}
             color={`${icon.color}`}
           />
         </Link>

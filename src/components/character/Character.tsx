@@ -12,6 +12,7 @@ type CharacterProps = {
   positionY?: number
   positionX?: number
   size?: number
+  hideOnMobile?: boolean
 }
 
 const Character: React.FC<CharacterProps> = ({
@@ -20,10 +21,14 @@ const Character: React.FC<CharacterProps> = ({
   positionY = 0,
   positionX = 0,
   size = 373,
+  hideOnMobile = false,
 }) => {
   const isWithinScreenSize = useMediaQuery({
     minWidth: 1440,
   })
+  if (hideOnMobile && !isWithinScreenSize) {
+    return null
+  }
   return (
     <Image
       src={getCharacterImage(character)}
