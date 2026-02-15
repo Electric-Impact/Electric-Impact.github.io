@@ -123,14 +123,6 @@ const Footer: React.FC = () => {
               >
                 Download our Games
               </Text>
-              {/* <Text
-              fontFamily={"caption"}
-              fontSize={"s"}
-              color={"white"}
-              marginBottom={"none"}
-            >
-              {footer?.location}
-            </Text> */}
               <Link
                 href={footer?.downloadLink}
                 role="button"

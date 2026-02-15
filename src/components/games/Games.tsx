@@ -35,7 +35,7 @@ const Games: React.FC<GamesProps> = ({ game, ...props }) => {
             key={index}
             href={
               item.internalLink
-                ? `?page=${item.buttonLinkInternal ?? ""}`
+                ? (item.buttonLinkInternal ?? "")
                 : (item.buttonLinkExternal ?? "")
             }
             style={{ width: "100%", textDecoration: "none" }}

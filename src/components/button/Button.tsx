@@ -35,7 +35,7 @@ const Button: React.FC<ButtonProps> = ({
 
   if (link) {
     return (
-      <a style={{ textDecoration: "none" }} href={internalLink ? `?page=${link}` : externalLink} target="_blank" rel="noopener noreferrer">
+      <a style={{ textDecoration: "none" }} href={internalLink ? link : externalLink} target="_blank" rel="noopener noreferrer">
         <button
         className={`${className} ${css.btn} ${css.theme[variant]} ${css.size[size]}`}
         onMouseEnter={() => setHovered(true)}

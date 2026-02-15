@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import { BuilderComponent, builder, useIsPreviewing } from "@builder.io/react"
 import Footer from "./components/footer/Footer"
 import Nav from "./components/nav/Nav"
-import { Container } from "./atomic"
 import registerBuilderComponents from "./utils/register-builder-components"
 
 // Put your API key here

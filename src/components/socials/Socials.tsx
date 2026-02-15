@@ -17,7 +17,7 @@ export type SocialLink = {
 type SocialLinkProps = {
   className?: string
   socials: SocialLink[]
-  size?: "s" | "m" | "l"
+  size?: "s" | "m" | "l" | "xl"
 }
 
 const Socials: React.FC<SocialLinkProps> = ({
@@ -37,6 +37,9 @@ const Socials: React.FC<SocialLinkProps> = ({
       break
     case "l":
       iconSize = 32
+      break
+    case "xl":
+      iconSize = 48
       break
     default:
       iconSize = 24

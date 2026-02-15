@@ -76,9 +76,9 @@ const SubHero: React.FC<SubHeroProps> = ({
           <Button
             internalLink={internalLink}
             variant={"primary"}
-            cta
             size={"l"}
             link={buttonLink}
+            cta={false}
           >
             {buttonLabel}
           </Button>

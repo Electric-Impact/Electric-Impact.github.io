@@ -3,8 +3,10 @@ import { ThemeColors } from "../../styles/theme.css"
 import Instagram from "./Instagram"
 import X from "./X"
 import Facebook from "./Facebook"
+import Tiktok from "./Tiktok"
+import Discord from "./Discord"
 
-export const socialIconTypes = ["facebook", "instagram", "x"]
+export const socialIconTypes = ["facebook", "instagram", "x", "tiktok", "discord"] as const
 
 export type SocialIconType = (typeof socialIconTypes)[number]
 
@@ -47,6 +49,14 @@ const SocialIcon: FC<SocialIconPropTypes> = ({
     case "x":
       return (
         <X className={className} color={color} width={width} height={height} />
+      )
+    case "tiktok":
+      return (
+        <Tiktok className={className} color={color} width={width} height={height} />
+      )
+    case "discord":
+      return (
+        <Discord className={className} color={color} width={width} height={height} />
       )
     default:
       return null
