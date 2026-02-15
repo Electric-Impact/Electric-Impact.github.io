@@ -6,7 +6,6 @@ export const text = style({
   flexDirection: "row",
   alignItems: "center",
   justifyContent: "space-between",
-  width: "100%",
   color: themeVars.colors.white,
   textDecoration: "none",
 
