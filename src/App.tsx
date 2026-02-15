@@ -21,11 +21,9 @@ const App: React.FC = () => {
   // get the page content from Builder
   useEffect(() => {
     async function fetchContent() {
-      const urlSearchParams = new URLSearchParams(window.location.search)
-      const page = urlSearchParams.get("page")
       const content = await builder
         .get("page", {
-          url: !page ? window.location.pathname : `/${page}`,
+          url: window.location.pathname,
           ...builderCache,
         })
         .promise()
