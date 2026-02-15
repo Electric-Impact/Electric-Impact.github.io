@@ -129,11 +129,6 @@ const Footer: React.FC = () => {
                 target="_blank"
                 aria-label="Download our games on Steam"
               >
-                {/* <Image
-                  src="/assets/images/steam_download.webp"
-                  width={96}
-                  alt="Download our games on Steam"
-                /> */}
                 <SocialIcon name="wishlist-steam" width={96} height={32} />
               </Link>
             </Box>

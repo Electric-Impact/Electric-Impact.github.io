@@ -2,8 +2,9 @@ import { FC } from "react"
 import { ThemeColors } from "../../styles/theme.css"
 import Arrow from "./Arrow"
 import BlixtDivider from "./BlixtDivider"
+import ArrowRight from "./ArrowRight"
 
-export const iconTypes = ["arrow", "blixt-divider"] as const
+export const iconTypes = ["arrow", "blixt-divider", "arrow-right"] as const
 
 export type IconType = (typeof iconTypes)[number]
 
@@ -42,6 +43,15 @@ const Icons: FC<IconPropTypes> = ({
           width={width}
           height={height}
           style={style}
+        />
+      )
+    case "arrow-right":
+      return (
+        <ArrowRight
+          className={className}
+          color={color}
+          width={width}
+          height={height}
         />
       )
     default:

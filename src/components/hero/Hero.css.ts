@@ -10,6 +10,7 @@ export const container = styleVariants({
     "@media": {
       [`screen and (min-width: ${eiTheme.breakpoints.tablet})`]: {
         minHeight: 710,
+        marginTop: 55,
       },
       [`screen and (min-width: ${eiTheme.breakpoints.desktop})`]: {
         transition: "filter 0.4s ease-in-out",
