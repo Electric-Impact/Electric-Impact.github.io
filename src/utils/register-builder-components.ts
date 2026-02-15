@@ -5,10 +5,13 @@ import { Box, Container, Heading } from "../atomic"
 import Button from "../components/button/Button"
 import Games from "../components/games/Games"
 import Facts from "../components/facts/Facts"
-import SubHero from "../components/sub_hero/SubHero"
 import TextComponent from "../components/text_component/TextComponent"
 import ContentDivider from "../components/content_divider/ContentDivider"
 import Character from "../components/character/Character"
+import DashNews from "../components/dash_news/DashNews"
+import Socials from "../components/socials/Socials"
+import { socialIconTypes } from "../atomic/components/icons/SocialsIcon"
+import GameInfo from "../components/game_info/GameInfo"
 
 const ALLOWED_IMAGE_FILE_TYPES = ["jpeg", "png", "jpg", "gif", "webp"]
 const MARGIN_PADDING_INPUTS = [
@@ -97,6 +100,12 @@ export default function registerBuilderComponents(): void {
         allowedFileTypes: ALLOWED_IMAGE_FILE_TYPES,
       },
       {
+        name: "blackwhite",
+        friendlyName: "Black and white image?",
+        type: "boolean",
+        defaultValue: true,
+      },
+      {
         name: "image",
         type: "file",
         allowedFileTypes: ALLOWED_IMAGE_FILE_TYPES,
@@ -104,73 +113,191 @@ export default function registerBuilderComponents(): void {
     ],
   })
 
-  Builder.registerComponent(withChildren(Box), {
-    name: "BoxComponent",
-    friendlyName: "Box",
+  Builder.registerComponent(Games, {
+    name: "Games",
     inputs: [
       ...MARGIN_PADDING_INPUTS,
       {
-        name: "backgroundColor",
-        type: "string",
-        enum: [...Object.keys(eiTheme.colors)],
-        defaultValue: "transparent",
-      },
-      { name: "display", type: "string", enum: ["block", "flex"] },
-      { name: "flexDirection", type: "string", enum: ["row", "column"] },
-      {
-        name: "alignItems",
-        type: "string",
-        enum: ["flex-start", "center", "flex-end"],
-      },
-      {
-        name: "justifyContent",
-        type: "string",
-        enum: ["flex-start", "center", "flex-end", "space-between"],
-      },
-      { name: "gap", type: "string", enum: [...Object.keys(themeVars.spaces)] },
-      {
-        name: "position",
-        type: "string",
-        enum: ["relative", "absolute"],
-        defaultValue: "relative",
+        name: "game",
+        type: "list",
+        subFields: [
+          {
+            name: "backgroundImage",
+            type: "file",
+            allowedFileTypes: ALLOWED_IMAGE_FILE_TYPES,
+          },
+          {
+            name: "logo",
+            type: "file",
+            allowedFileTypes: ALLOWED_IMAGE_FILE_TYPES,
+          },
+          { name: "buttonText", type: "text" },
+          {
+            name: "internalLink",
+            type: "boolean",
+            helperText: "Toggle for external link",
+            defaultValue: true,
+          },
+          {
+            name: "buttonLinkInternal",
+            friendlyName: "Button link",
+            type: "text",
+            showIf: `options.get('internalLink') === true`,
+          },
+          {
+            name: "buttonLinkExternal",
+            friendlyName: "Button link",
+            type: "text",
+            showIf: `options.get('internalLink') === false`,
+          },
+        ],
       },
     ],
   })
 
-  Builder.registerComponent(withChildren(Container), {
-    name: "Container",
+  Builder.registerComponent(Facts, {
+    name: "Facts",
     inputs: [
       ...MARGIN_PADDING_INPUTS,
       {
-        name: "backgroundColor",
+        name: "fact",
+        type: "list",
+        subFields: [
+          { name: "title", type: "text", defaultValue: "Title goes here" },
+          {
+            name: "description",
+            type: "richText",
+            defaultValue: "Text goes here",
+          },
+        ],
+      },
+      {
+        name: "color",
+        friendlyName: "Text Color",
         type: "string",
         enum: [...Object.keys(eiTheme.colors)],
-        defaultValue: "transparent",
+        defaultValue: "white",
       },
-      { name: "display", type: "string", enum: ["block", "flex"] },
-      { name: "flexDirection", type: "string", enum: ["row", "column"] },
+    ],
+  })
+
+  Builder.registerComponent(DashNews, {
+    name: "DashNews",
+    inputs: [
       {
-        name: "alignItems",
-        type: "string",
-        enum: ["flex-start", "center", "flex-end"],
-      },
-      {
-        name: "justifyContent",
-        type: "string",
-        enum: ["flex-start", "center", "flex-end", "space-between"],
-      },
-      { name: "gap", type: "string", enum: [...Object.keys(themeVars.spaces)] },
-      {
-        name: "maxWidth",
+        name: "width",
         type: "number",
-        helperText:
-          "Set a max width for the container, leave empty for default width",
+        helperText: "Set the width of the Dash News component in pixels",
+        defaultValue: 646,
+      },
+    ],
+  })
+
+  Builder.registerComponent(GameInfo, {
+    name: "GameInfo",
+    inputs: [
+      ...MARGIN_PADDING_INPUTS,
+      {name: "genre", type: "text", defaultValue: "Genre goes here"},
+      {name: "releaseDate", type: "text", defaultValue: "Release date goes here"},
+      {name: "platform", type: "text", defaultValue: "Platform goes here"},
+    ],
+  })
+
+  Builder.registerComponent(Character, {
+    name: "Character",
+    inputs: [
+      ...MARGIN_PADDING_INPUTS,
+      {
+        name: "character",
+        friendlyName: "Choose character",
+        type: "string",
+        enum: [
+          "bosef",
+          "booger",
+          "bounce",
+          "helga",
+          "pegleg",
+          "rocket",
+          "shaman",
+          "toilet",
+        ],
       },
       {
-        name: "position",
+        name: "size",
+        type: "number",
+        helperText: "Set the width of the character image in pixels",
+        defaultValue: 373,
+      },
+      {
+        name: "flipCharacter",
+        friendlyName: "Flip character image?",
+        type: "boolean",
+        defaultValue: false,
+      },
+      {
+        name: "positionY",
+        friendlyName: "Characters position from top",
+        type: "range",
+        defaultValue: 0,
+        min: 0,
+        max: 100,
+      },
+      {
+        name: "positionX",
+        friendlyName: "Characters position from left",
+        type: "range",
+        defaultValue: 0,
+        min: 0,
+        max: 100,
+      },
+      {
+        name: "hideOnMobile",
+        friendlyName: "Hide on mobile devices?",
+        type: "boolean",
+        defaultValue: false,
+      },
+    ],
+  })
+
+  Builder.registerComponent(Socials, {
+    name: "Socials",
+    friendlyName: "Social media links",
+    inputs: [
+      {
+        name: "socials",
+        friendlyName: "Add social media link",
+        type: "list",
+        subFields: [
+          {
+            name: "label",
+            type: "text",
+            helperText: "For accessibility purposes, please enter the name of the social media platform (e.g., 'Follow us on Facebook')",
+          },
+          {
+            name: "link",
+            type: "text",
+            helperText: "Please enter the URL of the social media platform (e.g., 'https://www.facebook.com/yourpage')",
+          },
+          {
+            name: "icon",
+            type: "string",
+            enum: [...socialIconTypes],
+            defaultValue: "facebook",
+          },
+          {
+            name: "color",
+            type: "string",
+            enum: [...Object.keys(eiTheme.colors)],
+            defaultValue: "white",
+          },
+        ],
+      },
+      {
+        name: "size",
         type: "string",
-        enum: ["relative", "absolute"],
-        defaultValue: "relative",
+        enum: ["s", "m", "l", "xl"],
+        defaultValue: "m",
+        helperText: "Set the size of the social media icons",
       },
     ],
   })
@@ -283,11 +410,6 @@ export default function registerBuilderComponents(): void {
       {
         name: "link",
         type: "text",
-        regex: {
-          pattern: "^[a-z-]+$",
-          message:
-            "Please enter a valid URL containing only lowercase letters and hyphens",
-        },
         showIf: `options.get('internalLink') === true`,
       },
       {
@@ -299,190 +421,78 @@ export default function registerBuilderComponents(): void {
     ],
   })
 
-  Builder.registerComponent(Games, {
-    name: "Games",
-    inputs: [
-      ...MARGIN_PADDING_INPUTS,
-      {
-        name: "game",
-        type: "list",
-        subFields: [
-          {
-            name: "backgroundImage",
-            type: "file",
-            allowedFileTypes: ALLOWED_IMAGE_FILE_TYPES,
-          },
-          {
-            name: "logo",
-            type: "file",
-            allowedFileTypes: ALLOWED_IMAGE_FILE_TYPES,
-          },
-          { name: "buttonText", type: "text" },
-          {
-            name: "internalLink",
-            type: "boolean",
-            helperText: "Toggle for external link",
-            defaultValue: true,
-          },
-          {
-            name: "buttonLinkInternal",
-            friendlyName: "Button link",
-            type: "text",
-            regex: {
-              pattern: "^[a-z-]+$",
-              message:
-                "Please enter a valid URL containing only lowercase letters and hyphens",
-            },
-            showIf: `options.get('internalLink') === true`,
-          },
-          {
-            name: "buttonLinkExternal",
-            friendlyName: "Button link",
-            type: "text",
-            showIf: `options.get('internalLink') === false`,
-          },
-        ],
-      },
-    ],
-  })
-
-  Builder.registerComponent(Facts, {
-    name: "Facts",
-    inputs: [
-      ...MARGIN_PADDING_INPUTS,
-      {
-        name: "fact",
-        type: "list",
-        subFields: [
-          { name: "title", type: "text", defaultValue: "Title goes here" },
-          {
-            name: "description",
-            type: "richText",
-            defaultValue: "Text goes here",
-          },
-        ],
-      },
-      {
-        name: "color",
-        friendlyName: "Text Color",
-        type: "string",
-        enum: [...Object.keys(eiTheme.colors)],
-        defaultValue: "white",
-      },
-    ],
-  })
-
   Builder.registerComponent(withChildren(ContentDivider), {
     name: "ContentDivider",
     inputs: [...MARGIN_PADDING_INPUTS],
   })
 
-  Builder.registerComponent(Character, {
-    name: "Character",
-    inputs: [
-      ...MARGIN_PADDING_INPUTS,
-      {
-        name: "character",
-        friendlyName: "Choose character",
-        type: "string",
-        enum: [
-          "bosef",
-          "booger",
-          "bounce",
-          "helga",
-          "pegleg",
-          "rocket",
-          "shaman",
-          "toilet",
-        ],
-      },
-      {
-        name: "size",
-        type: "number",
-        helperText: "Set the width of the character image in pixels",
-        defaultValue: 373,
-      },
-      {
-        name: "flipCharacter",
-        friendlyName: "Flip character image?",
-        type: "boolean",
-        defaultValue: false,
-      },
-      {
-        name: "positionY",
-        friendlyName: "Characters position from top",
-        type: "range",
-        defaultValue: 0,
-        min: 0,
-        max: 100,
-      },
-      {
-        name: "positionX",
-        friendlyName: "Characters position from left",
-        type: "range",
-        defaultValue: 0,
-        min: 0,
-        max: 100,
-      },
-    ],
-  })
-
-  Builder.registerComponent(SubHero, {
-    name: "SubHero",
+  Builder.registerComponent(withChildren(Box), {
+    name: "BoxComponent",
+    friendlyName: "Box",
     inputs: [
       ...MARGIN_PADDING_INPUTS,
       {
         name: "backgroundColor",
         type: "string",
         enum: [...Object.keys(eiTheme.colors)],
-        defaultValue: "black",
+        defaultValue: "transparent",
       },
+      { name: "display", type: "string", enum: ["block", "flex"] },
+      { name: "flexDirection", type: "string", enum: ["row", "column"] },
       {
-        name: "title",
-        type: "text",
-        defaultValue: "Title goes here",
-      },
-      {
-        name: "intro",
-        type: "longText",
-        defaultValue: "Intro goes here",
-      },
-      {
-        name: "buttonLink",
-        type: "text",
-        defaultValue: "/",
-      },
-      {
-        name: "buttonLabel",
-        type: "text",
-        defaultValue: "Click me",
-      },
-      {
-        name: "internalLink",
-        type: "boolean",
-        helperText: "Toggle for internal link",
-        defaultValue: false,
-      },
-      {
-        name: "character",
-        friendlyName: "Choose character",
+        name: "alignItems",
         type: "string",
-        enum: [
-          "bosef",
-          "booger",
-          "bounce",
-          "helga",
-          "pegleg",
-          "rocket",
-          "shaman",
-          "toilet",
-        ],
+        enum: ["flex-start", "center", "flex-end"],
       },
       {
-        name: "flipCharacter",
-        friendlyName: "Flip character image?",
-        type: "boolean",
-        defaultValue: false,
+        name: "justifyContent",
+        type: "string",
+        enum: ["flex-start", "center", "flex-end", "space-between"],
+      },
+      { name: "gap", type: "string", enum: [...Object.keys(themeVars.spaces)] },
+      {
+        name: "position",
+        type: "string",
+        enum: ["relative", "absolute"],
+        defaultValue: "relative",
+      },
+    ],
+  })
+
+  Builder.registerComponent(withChildren(Container), {
+    name: "Container",
+    inputs: [
+      ...MARGIN_PADDING_INPUTS,
+      {
+        name: "backgroundColor",
+        type: "string",
+        enum: [...Object.keys(eiTheme.colors)],
+        defaultValue: "transparent",
+      },
+      { name: "display", type: "string", enum: ["block", "flex"] },
+      { name: "flexDirection", type: "string", enum: ["row", "column"] },
+      {
+        name: "alignItems",
+        type: "string",
+        enum: ["flex-start", "center", "flex-end"],
+      },
+      {
+        name: "justifyContent",
+        type: "string",
+        enum: ["flex-start", "center", "flex-end", "space-between"],
+      },
+      { name: "gap", type: "string", enum: [...Object.keys(themeVars.spaces)] },
+      {
+        name: "maxWidth",
+        type: "number",
+        helperText:
+          "Set a max width for the container, leave empty for default width",
+      },
+      {
+        name: "position",
+        type: "string",
+        enum: ["relative", "absolute"],
+        defaultValue: "relative",
       },
     ],
   })

@@ -162,7 +162,8 @@ export const themeVars = createGlobalTheme(":root", eiTheme)
 
 globalStyle("body", {
   scrollbarWidth: "none",
-  color: eiTheme.colors.granite,
+  color: eiTheme.colors.white,
+  backgroundColor: eiTheme.colors.granite,
 })
 
 globalStyle("*", {

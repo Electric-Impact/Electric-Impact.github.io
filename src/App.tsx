@@ -2,7 +2,6 @@ import { useEffect, useState } from "react"
 import { BuilderComponent, builder, useIsPreviewing } from "@builder.io/react"
 import Footer from "./components/footer/Footer"
 import Nav from "./components/nav/Nav"
-import { Container } from "./atomic"
 import registerBuilderComponents from "./utils/register-builder-components"
 
 // Put your API key here
@@ -22,11 +21,9 @@ const App: React.FC = () => {
   // get the page content from Builder
   useEffect(() => {
     async function fetchContent() {
-      const urlSearchParams = new URLSearchParams(window.location.search)
-      const page = urlSearchParams.get("page")
       const content = await builder
         .get("page", {
-          url: !page ? window.location.pathname : `/${page}`,
+          url: window.location.pathname,
           ...builderCache,
         })
         .promise()
@@ -49,6 +46,10 @@ const App: React.FC = () => {
   // <FourOhFour> is placeholder.
   if (notFound && !isPreviewingInBuilder) {
     return <>404</>
+  }
+
+  if(!content){
+    return <></>
   }
 
   // return the page when found

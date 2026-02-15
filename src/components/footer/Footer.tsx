@@ -4,8 +4,8 @@ import Socials from "../socials/Socials"
 import { FooterData } from "../../context/LinkContext"
 import builder from "@builder.io/react"
 import Link from "../link/Link"
-import Image from "../image/Image"
 import Divider from "../divider/Divider"
+import SocialIcon from "../../atomic/components/icons/SocialsIcon"
 
 const Footer: React.FC = () => {
   const [footerData, setFooterData] = useState<FooterData>({
@@ -123,25 +123,13 @@ const Footer: React.FC = () => {
               >
                 Download our Games
               </Text>
-              {/* <Text
-              fontFamily={"caption"}
-              fontSize={"s"}
-              color={"white"}
-              marginBottom={"none"}
-            >
-              {footer?.location}
-            </Text> */}
               <Link
                 href={footer?.downloadLink}
                 role="button"
                 target="_blank"
                 aria-label="Download our games on Steam"
               >
-                <Image
-                  src="/assets/images/steam_download.webp"
-                  width={96}
-                  alt="Download our games on Steam"
-                />
+                <SocialIcon name="wishlist-steam" width={96} height={32} />
               </Link>
             </Box>
           </Box>

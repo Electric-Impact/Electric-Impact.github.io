@@ -17,7 +17,7 @@ export type SocialLink = {
 type SocialLinkProps = {
   className?: string
   socials: SocialLink[]
-  size?: "s" | "m" | "l"
+  size?: "s" | "m" | "l" | "xl"
 }
 
 const Socials: React.FC<SocialLinkProps> = ({
@@ -37,6 +37,9 @@ const Socials: React.FC<SocialLinkProps> = ({
       break
     case "l":
       iconSize = 32
+      break
+    case "xl":
+      iconSize = 48
       break
     default:
       iconSize = 24
@@ -62,8 +65,8 @@ const Socials: React.FC<SocialLinkProps> = ({
         >
           <SocialIcon
             name={icon.icon}
-            width={iconSize}
-            height={iconSize}
+            width={icon.icon === "wishlist-steam" ? 96 : iconSize}
+            height={icon.icon === "wishlist-steam" ? 32 : iconSize}
             color={`${icon.color}`}
           />
         </Link>
