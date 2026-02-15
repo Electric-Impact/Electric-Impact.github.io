@@ -48,6 +48,10 @@ const App: React.FC = () => {
     return <>404</>
   }
 
+  if(!content){
+    return <></>
+  }
+
   // return the page when found
   return (
     <>
