@@ -13,7 +13,7 @@ import Socials from "../socials/Socials"
 const Nav: React.FC = () => {
   const [menuOpen, setmenuOpen] = useState(false)
   const [navData, setNavData] = useState<NavData>({
-    data: { links: [], useLogo: false, logo: "" },
+    data: { links: [], useLogo: false, logo: "", socialLinks: [] },
   })
 
   // get the navigation data from Builder
@@ -81,11 +81,6 @@ const Nav: React.FC = () => {
           boxShadow: !menuOpen ? "0 5px 8.5px 0 rgba(0, 0, 0, 0.25)" : "none",
         }}
       >
-        {/* <Link href={"/"} className={css.text}>
-          <Text fontFamily={"heading"} fontSize={"m"}>
-            Home
-          </Text>
-        </Link> */}
         <MenuButton menuOpen={menuOpen} setmenuOpen={setmenuOpen} />
       </Box>
 
@@ -143,10 +138,10 @@ const Nav: React.FC = () => {
 
           <Box
             display={"flex"}
-            flexDirection={"row"}
+            flexDirection={"column"}
             alignItems={"center"}
-            justifyContent={"flex-start"}
-            gap={"m"}
+            justifyContent={"center"}
+            gap={"xs"}
             style={{ width: "100%" }}
           >
             <Link
@@ -155,45 +150,10 @@ const Nav: React.FC = () => {
               rel="noopener noreferrer"
             >
               <WishlistSteam
-                height={32}
                 style={{ maxWidth: 150, width: "100%" }}
               />
             </Link>
-            <Socials
-              size="l"
-              socials={[
-                {
-                  label: "Facebook",
-                  link: "https://www.facebook.com",
-                  icon: "facebook",
-                  color: "granite",
-                },
-                {
-                  label: "X",
-                  link: "https://www.x.com",
-                  icon: "x",
-                  color: "granite",
-                },
-                {
-                  label: "Instagram",
-                  link: "https://www.instagram.com",
-                  icon: "instagram",
-                  color: "granite",
-                },
-                {
-                  label: "TikTok",
-                  link: "https://www.tiktok.com",
-                  icon: "tiktok",
-                  color: "granite",
-                },
-                {
-                  label: "Discord",
-                  link: "https://www.discord.com",
-                  icon: "discord",
-                  color: "granite",
-                },
-              ]}
-            />
+            <Socials size="l" socials={nav?.socialLinks} />
           </Box>
         </Box>
       )}
