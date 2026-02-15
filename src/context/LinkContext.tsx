@@ -14,5 +14,6 @@ export type NavData = {
     links: {label: string, link: string}[]
     useLogo: boolean
     logo: string
+    socialLinks: SocialLink[]
   }
 }
