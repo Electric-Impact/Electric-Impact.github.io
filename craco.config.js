@@ -7,7 +7,7 @@ module.exports = {
   webpack: {
     configure: (webpackConfig) => {
       webpackConfig.plugins.push(new VanillaExtractPlugin());
-
+      webpackConfig.resolve.symlinks = true;
       return webpackConfig;
     },
   },
