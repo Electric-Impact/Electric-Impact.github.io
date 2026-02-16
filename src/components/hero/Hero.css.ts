@@ -12,13 +12,6 @@ export const container = styleVariants({
         minHeight: 710,
         marginTop: 55,
       },
-      [`screen and (min-width: ${eiTheme.breakpoints.desktop})`]: {
-        transition: "filter 0.4s ease-in-out",
-
-        ":hover": {
-          filter: "grayscale(0)",
-        },
-      },
     },
   },
   secondary: {
@@ -31,6 +24,26 @@ export const container = styleVariants({
       },
       [`screen and (min-width: ${eiTheme.breakpoints.desktop})`]: {
         height: 800,
+      },
+    },
+  },
+  blackwhite: {
+    minHeight: 480,
+    height: "100%",
+    width: "100%",
+
+    "@media": {
+      [`screen and (min-width: ${eiTheme.breakpoints.tablet})`]: {
+        minHeight: 710,
+        marginTop: 55,
+      },
+      [`screen and (min-width: ${eiTheme.breakpoints.desktop})`]: {
+        filter: "grayscale(1)",
+        transition: "filter 0.4s ease-in-out",
+
+        ":hover": {
+          filter: "grayscale(0)",
+        },
       },
     },
   },

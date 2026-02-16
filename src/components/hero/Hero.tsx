@@ -40,9 +40,8 @@ const Hero: React.FC<HeroProps> = ({
         backgroundSize: "cover",
         backgroundPosition: "center",
         backgroundRepeat: "no-repeat",
-        filter: blackwhite && isDesktop ? "grayscale(1)" : "none",
       }}
-      className={css.container[type]}
+      className={css.container[blackwhite ? "blackwhite" : type]}
     >
       {image && <Image src={image} alt={"Logo"} className={css.image[type]} />}
       {title && (
