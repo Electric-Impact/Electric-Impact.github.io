@@ -190,6 +190,12 @@ export default function registerBuilderComponents(): void {
         helperText: "Set the width of the Dash News component in pixels",
         defaultValue: 646,
       },
+      {
+        name: "height",
+        type: "number",
+        helperText: "Set the height of the Dash News component in pixels",
+        defaultValue: 190,
+      },
     ],
   })
 
