@@ -6,8 +6,9 @@ import Facebook from "./Facebook"
 import Tiktok from "./Tiktok"
 import Discord from "./Discord"
 import WishlistSteam from "./WishlistSteam"
+import LinkedIn from "./LinkedIn"
 
-export const socialIconTypes = ["facebook", "instagram", "x", "tiktok", "discord", "wishlist-steam"] as const
+export const socialIconTypes = ["facebook", "instagram", "x", "tiktok", "discord", "wishlist-steam", "linkedin"] as const
 
 export type SocialIconType = (typeof socialIconTypes)[number]
 
@@ -62,6 +63,10 @@ const SocialIcon: FC<SocialIconPropTypes> = ({
     case "wishlist-steam":
       return (
         <WishlistSteam className={className} color={color} width={width} height={height} />
+      )
+    case "linkedin":
+      return (
+        <LinkedIn className={className} color={color} width={width} height={height} />
       )
     default:
       return null
