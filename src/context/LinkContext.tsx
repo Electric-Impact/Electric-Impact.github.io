@@ -12,7 +12,7 @@ export type FooterData = {
 export type NavData = {
   data: {
     links: {label: string, link: string}[]
-    useLogo: boolean
+    useIcon: boolean
     logo: string
     socialLinks: SocialLink[]
   }

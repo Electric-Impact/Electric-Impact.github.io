@@ -11,6 +11,8 @@ const LinkedIn: FC<IconBaseProps> = ({
   return (
     <Box {...props}>
       <svg
+        role="img"
+        aria-label="Electric Impact on LinkedIn"
         width={width}
         height={height}
         viewBox="0 0 24 24"

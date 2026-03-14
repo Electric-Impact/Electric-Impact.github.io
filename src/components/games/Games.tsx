@@ -42,8 +42,9 @@ const Games: React.FC<GamesProps> = ({ game, ...props }) => {
             className={css.zoomContainer}
           >
             <Button
+              as="span"
               variant={"primary"}
-              cta={false}
+              cta={true}
               size={"l"}
               style={{
                 zIndex: 10,

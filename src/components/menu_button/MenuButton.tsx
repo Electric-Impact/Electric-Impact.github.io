@@ -25,7 +25,7 @@ const MenuButton: React.FC<PropTypes> = ({
       }}
       role="button"
       tabIndex={0}
-      aria-label="Menu button"
+      aria-label="Menu"
     >
       <Box className={css.menuButton}>
         <Box

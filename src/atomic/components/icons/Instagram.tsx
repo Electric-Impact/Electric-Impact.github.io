@@ -11,6 +11,8 @@ const Instagram: FC<IconBaseProps> = ({
   return (
     <Box {...props}>
       <svg
+        role="img"
+        aria-label="Electric Impact on Instagram"
         width={width}
         height={height}
         viewBox="0 0 24 24"

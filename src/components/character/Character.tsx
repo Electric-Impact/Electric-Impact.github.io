@@ -32,7 +32,8 @@ const Character: React.FC<CharacterProps> = ({
   return (
     <Image
       src={getCharacterImage(character)}
-      alt={`Character ${character}`}
+      alt={""}
+      aria-hidden={true}
       width={size}
       height={size}
       style={{

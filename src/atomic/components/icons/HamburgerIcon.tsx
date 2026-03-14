@@ -11,6 +11,8 @@ const HamburgerIcon: FC<IconBaseProps> = ({
   return (
     <Box {...props}>
       <svg
+        role="img"
+        aria-label="Menu"
         width={width}
         height={height}
         viewBox="0 0 32 32"

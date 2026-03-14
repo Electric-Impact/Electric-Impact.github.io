@@ -3,8 +3,9 @@ import { ThemeColors } from "../../styles/theme.css"
 import Arrow from "./Arrow"
 import BlixtDivider from "./BlixtDivider"
 import ArrowRight from "./ArrowRight"
+import HomeIcon from "./HomeIcon"
 
-export const iconTypes = ["arrow", "blixt-divider", "arrow-right"] as const
+export const iconTypes = ["arrow", "blixt-divider", "arrow-right", "home-icon"] as const
 
 export type IconType = (typeof iconTypes)[number]
 
@@ -48,6 +49,15 @@ const Icons: FC<IconPropTypes> = ({
     case "arrow-right":
       return (
         <ArrowRight
+          className={className}
+          color={color}
+          width={width}
+          height={height}
+        />
+      )
+    case "home-icon":
+      return (
+        <HomeIcon
           className={className}
           color={color}
           width={width}
