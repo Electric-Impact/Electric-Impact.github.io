@@ -11,6 +11,8 @@ const Facebook: FC<IconBaseProps> = ({
   return (
     <Box {...props}>
       <svg
+        role="img"
+        aria-label="Electric Impact on Facebook"
         width={width}
         height={height}
         viewBox="0 0 24 24"

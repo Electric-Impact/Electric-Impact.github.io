@@ -11,6 +11,8 @@ const WishlistSteam: FC<IconBaseProps> = ({
   return (
     <Box {...props}>
       <svg
+        role="img"
+        aria-label="Electric Impact Steam Wishlist"
         width={width}
         height={height}
         viewBox="0 0 96 32"

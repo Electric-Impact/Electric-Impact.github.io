@@ -1,6 +1,5 @@
 import React, { useEffect, useState } from "react"
 import { Box, Text } from "../../atomic"
-import Image from "../image/Image"
 import Link from "../link/Link"
 import * as css from "./Nav.css"
 import { NavData } from "../../context/LinkContext"
@@ -13,7 +12,7 @@ import Socials from "../socials/Socials"
 const Nav: React.FC = () => {
   const [menuOpen, setmenuOpen] = useState(false)
   const [navData, setNavData] = useState<NavData>({
-    data: { links: [], useLogo: false, logo: "", socialLinks: [] },
+    data: { links: [], useIcon: false, logo: "", socialLinks: [] },
   })
 
   // get the navigation data from Builder
@@ -45,14 +44,10 @@ const Nav: React.FC = () => {
         position={"fixed"}
       >
         <Link href={"/"} className={css.text}>
-          {nav?.useLogo && (
-            <Image
-              height={40}
-              src={nav?.logo}
-              alt={"Electric Impact logotype"}
-            />
+          {nav?.useIcon && (
+            <Icons name="home-icon" width={24} color="white" />
           )}
-          {!nav?.useLogo && (
+          {!nav?.useIcon && (
             <Text fontFamily={"heading"} fontSize={"m"}>
               Home
             </Text>
@@ -81,6 +76,9 @@ const Nav: React.FC = () => {
           boxShadow: !menuOpen ? "0 5px 8.5px 0 rgba(0, 0, 0, 0.25)" : "none",
         }}
       >
+        <Link href={"/"}>
+          <Icons name="home-icon" width={24} color="white" />
+        </Link>
         <MenuButton menuOpen={menuOpen} setmenuOpen={setmenuOpen} />
       </Box>
 
@@ -102,7 +100,7 @@ const Nav: React.FC = () => {
           }}
         >
           <ul className={css.navLinksContainer}>
-            <li className={css.navLinks}>
+            {/* <li className={css.navLinks}>
               <Link href={"/"} className={css.mobileText}>
                 <Text
                   fontFamily={"caption"}
@@ -116,7 +114,7 @@ const Nav: React.FC = () => {
                 </Text>
                 <Icons name="arrow" width={14} color="stone" />
               </Link>
-            </li>
+            </li> */}
             {nav?.links?.map((link, index) => (
               <li key={index} className={css.navLinks}>
                 <Link href={link.link} className={css.mobileText}>

@@ -18,7 +18,7 @@ export const mobileNav = style({
   height: 55,
   zIndex: 100,
   alignItems: "center",
-  justifyContent: "flex-end",
+  justifyContent: "space-between",
   gap: themeVars.spaces.m,
   paddingLeft: themeVars.spaces.s,
   paddingRight: themeVars.spaces.s,

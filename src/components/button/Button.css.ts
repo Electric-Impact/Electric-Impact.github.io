@@ -1,17 +1,32 @@
 import { style, styleVariants } from "@vanilla-extract/css"
 import { eiTheme } from "../../atomic/styles/theme.css"
 
-export const btn = style({
-  display: "flex",
-  alignItems: "center",
-  justifyContent: "center",
-  cursor: "pointer",
-  whiteSpace: "pre",
-  fontFamily: eiTheme.fontFamilies.caption,
-  textTransform: "uppercase",
-  fontWeight: eiTheme.fontWeights.semibold,
-  transition:
-    "background cubic-bezier(0.4, 0, 0.2, 1) 200ms, border cubic-bezier(0.4, 0, 0.2, 1) 200ms",
+export const btn = styleVariants({
+  default: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    cursor: "pointer",
+    whiteSpace: "pre",
+    fontFamily: eiTheme.fontFamilies.caption,
+    textTransform: "uppercase",
+    fontWeight: eiTheme.fontWeights.semibold,
+    transition:
+      "background cubic-bezier(0.4, 0, 0.2, 1) 200ms, border cubic-bezier(0.4, 0, 0.2, 1) 200ms",
+  },
+  cta: {
+    display: "flex",
+    alignItems: "center",
+    justifyContent: "center",
+    gap: eiTheme.spaces.xs,
+    cursor: "pointer",
+    whiteSpace: "pre",
+    fontFamily: eiTheme.fontFamilies.caption,
+    textTransform: "uppercase",
+    fontWeight: eiTheme.fontWeights.semibold,
+    transition:
+      "background cubic-bezier(0.4, 0, 0.2, 1) 200ms, border cubic-bezier(0.4, 0, 0.2, 1) 200ms",
+  },
 })
 
 export const theme = styleVariants({

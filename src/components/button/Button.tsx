@@ -18,6 +18,7 @@ export type ButtonCustomProps = {
 
 export type ButtonProps = React.ButtonHTMLAttributes<HTMLButtonElement> & {
   className?: string
+  as?: React.ElementType
 } & ButtonCustomProps
 
 const Button: React.FC<ButtonProps> = ({
@@ -35,28 +36,43 @@ const Button: React.FC<ButtonProps> = ({
 
   if (link) {
     return (
-      <a style={{ textDecoration: "none" }} href={internalLink ? link : externalLink} target={externalLink ? "_blank" : "_self"} rel="noopener noreferrer">
-        <button
-        className={`${className} ${css.btn} ${css.theme[variant]} ${css.size[size]}`}
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-        {...props}
+      <a
+        style={{ textDecoration: "none" }}
+        href={internalLink ? link : externalLink}
+        target={externalLink ? "_blank" : "_self"}
+        rel="noopener noreferrer"
+        className={`${className} ${css.btn[cta ? "cta" : "default"]} ${css.theme[variant]} ${css.size[size]}`}
       >
-        {children} {cta && <Icons name="arrow" width={12} height={12} color={variant === 'primary' && !hovered ? "stone" : "electric"} />}
-      </button>
+        {children}
+        {cta && (
+          <Icons
+            name="arrow"
+            width={12}
+            height={12}
+            color={variant === "primary" && !hovered ? "stone" : "electric"}
+          />
+        )}
       </a>
     )
   }
 
   return (
-      <button
-        className={`${className} ${css.btn} ${css.theme[variant]} ${css.size[size]}`}
-        onMouseEnter={() => setHovered(true)}
-        onMouseLeave={() => setHovered(false)}
-        {...props}
-      >
-        {children} {cta && <Icons name="arrow" width={12} height={12} color={variant === 'primary' && !hovered ? "stone" : "electric"} />}
-      </button>
+    <button
+      className={`${className} ${css.btn[cta ? "cta" : "default"]} ${css.theme[variant]} ${css.size[size]}`}
+      onMouseEnter={() => setHovered(true)}
+      onMouseLeave={() => setHovered(false)}
+      {...props}
+    >
+      {children}
+      {cta && (
+        <Icons
+          name="arrow"
+          width={12}
+          height={12}
+          color={variant === "primary" && !hovered ? "stone" : "electric"}
+        />
+      )}
+    </button>
   )
 }
 

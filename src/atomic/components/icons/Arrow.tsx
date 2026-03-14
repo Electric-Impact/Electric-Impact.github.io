@@ -11,6 +11,8 @@ const Arrow: FC<IconBaseProps> = ({
   return (
     <Box {...props}>
       <svg
+        role="presentation"
+        aria-hidden={true}
         width={width}
         height={height}
         viewBox="0 0 12 12"
