@@ -1,0 +1,2409 @@
+[
+  {
+    "id": 26,
+    "platform": "youtube",
+    "name": "PewDiePie",
+    "url": "https://www.youtube.com/channel/UC-lHJZR3Gqxm24_Vd_AJ5Yw",
+    "subscriber_count": 110000000,
+    "viewer_count": 29496019373,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "Party Animals",
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 81,
+    "platform": "youtube",
+    "name": "Marshmello",
+    "url": "https://www.youtube.com/channel/UCEdvpU2pFRCVqU6yIPyTpMQ",
+    "subscriber_count": 58600000,
+    "viewer_count": 17958420325,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 69,
+    "platform": "youtube",
+    "name": "Mikecrack",
+    "url": "https://www.youtube.com/channel/UCqJ5zFEED1hWs0KNQCQuYdQ",
+    "subscriber_count": 58500000,
+    "viewer_count": 21890015123,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Ultimate Chicken Horse",
+      "Stick Fight: The Game"
+    ],
+    "contacts": [
+      {
+        "type": "business_email",
+        "value": "business@diamantitos.com"
+      },
+      {
+        "type": "email",
+        "value": "mikies@diamantitos.com"
+      }
+    ]
+  },
+  {
+    "id": 134,
+    "platform": "youtube",
+    "name": "Techno Gamerz",
+    "url": "https://www.youtube.com/channel/UCX8pnu3DYUnx8qy8V_c6oHg",
+    "subscriber_count": 52100000,
+    "viewer_count": 15909265050,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "technogamerzofficial@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 70,
+    "platform": "youtube",
+    "name": "LankyBox",
+    "url": "https://www.youtube.com/channel/UCSf0s2ogUVYpJPuzW1zpAOg",
+    "subscriber_count": 42000000,
+    "viewer_count": 35806067713,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Ultimate Chicken Horse",
+      "Stick Fight: The Game"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 1,
+    "platform": "youtube",
+    "name": "Markiplier",
+    "url": "https://www.youtube.com/channel/UC7_YxT-KID8kRbqZo7MyscQ",
+    "subscriber_count": 38700000,
+    "viewer_count": 23616756274,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Golf With Your Friends",
+      "Ultimate Chicken Horse",
+      "Overcooked"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 47,
+    "platform": "youtube",
+    "name": "VEGETTA777",
+    "url": "https://www.youtube.com/channel/UCam8T03EOFBsNdR0thrFHdQ",
+    "subscriber_count": 34700000,
+    "viewer_count": 16402122147,
+    "collected_at": "2026-06-23 20:16:29",
+    "games": [
+      "Pummel Party"
+    ],
+    "contacts": [
+      {
+        "type": "business_email",
+        "value": "vegetta777@vizz-agency.com"
+      }
+    ]
+  },
+  {
+    "id": 115,
+    "platform": "youtube",
+    "name": "Dream",
+    "url": "https://www.youtube.com/channel/UCTkXRDQl0luXxVQrRQvWS6w",
+    "subscriber_count": 34500000,
+    "viewer_count": 4419918842,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 2,
+    "platform": "youtube",
+    "name": "jacksepticeye",
+    "url": "https://www.youtube.com/channel/UCYzPXprvl5Y-Sf0g4vX-m6g",
+    "subscriber_count": 31200000,
+    "viewer_count": 17651301694,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "Golf With Your Friends",
+      "Ultimate Chicken Horse",
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 71,
+    "platform": "youtube",
+    "name": "invictor",
+    "url": "https://www.youtube.com/channel/UChOQkbLHWi3zSCUjT7Kjd1g",
+    "subscriber_count": 30400000,
+    "viewer_count": 11148019829,
+    "collected_at": "2026-06-23 20:17:18",
+    "games": [
+      "Ultimate Chicken Horse"
+    ],
+    "contacts": [
+      {
+        "type": "business_email",
+        "value": "business@invictorrose.com"
+      },
+      {
+        "type": "email",
+        "value": "invictorgs3yt@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 27,
+    "platform": "youtube",
+    "name": "DanTDM",
+    "url": "https://www.youtube.com/channel/UCS5Oz6CHmeoF7vSad0qqXfw",
+    "subscriber_count": 29100000,
+    "viewer_count": 20391293242,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Party Animals",
+      "Stick Fight: The Game"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "management@dantdmteam.com"
+      }
+    ]
+  },
+  {
+    "id": 3,
+    "platform": "youtube",
+    "name": "VanossGaming",
+    "url": "https://www.youtube.com/channel/UCKqH_9mk1waLgBiL2vT5b9g",
+    "subscriber_count": 26000000,
+    "viewer_count": 16958404329,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Golf With Your Friends",
+      "Ultimate Chicken Horse",
+      "Stick Fight: The Game"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 28,
+    "platform": "youtube",
+    "name": "MiawAug",
+    "url": "https://www.youtube.com/channel/UC3J4Q1grz46bdJ7NJLd4DGw",
+    "subscriber_count": 25600000,
+    "viewer_count": 8394342422,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Party Animals",
+      "Pummel Party",
+      "Overcooked"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 4,
+    "platform": "youtube",
+    "name": "SSundee",
+    "url": "https://www.youtube.com/channel/UCke6I9N4KfC968-yRcd5YRg",
+    "subscriber_count": 25400000,
+    "viewer_count": 17155744028,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Golf With Your Friends",
+      "Ultimate Chicken Horse",
+      "Stick Fight: The Game"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 5,
+    "platform": "youtube",
+    "name": "Aphmau",
+    "url": "https://www.youtube.com/channel/UCzYfz8uibvnB7Yc1LjePi4g",
+    "subscriber_count": 25000000,
+    "viewer_count": 29524150921,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Party Animals",
+      "Tricky Towers",
+      "Stick Fight: The Game"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 6,
+    "platform": "youtube",
+    "name": "Jelly",
+    "url": "https://www.youtube.com/channel/UC0DZmkupLYwc0yDsfocLh0A",
+    "subscriber_count": 23300000,
+    "viewer_count": 15343296776,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Golf With Your Friends",
+      "Ultimate Chicken Horse",
+      "Stick Fight: The Game"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 135,
+    "platform": "youtube",
+    "name": "ElTrollino",
+    "url": "https://www.youtube.com/channel/UCI2FmVp--YL8d7iVFt8mmxg",
+    "subscriber_count": 22300000,
+    "viewer_count": 6833991150,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 72,
+    "platform": "youtube",
+    "name": "AuthenticGames",
+    "url": "https://www.youtube.com/channel/UCIPA6iWNaoetaa1T46RkzXw",
+    "subscriber_count": 20200000,
+    "viewer_count": 9015806990,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "Ultimate Chicken Horse",
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 82,
+    "platform": "youtube",
+    "name": "REACT",
+    "url": "https://www.youtube.com/channel/UC0v-tlzsn0QZwJnkiaUSJVQ",
+    "subscriber_count": 20200000,
+    "viewer_count": 13799090040,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": [
+      {
+        "type": "youtube",
+        "value": "REACTbullseye"
+      },
+      {
+        "type": "youtube",
+        "value": "ReactCASTOfficial"
+      },
+      {
+        "type": "youtube",
+        "value": "TeensReactOfficial"
+      }
+    ]
+  },
+  {
+    "id": 83,
+    "platform": "youtube",
+    "name": "IGN",
+    "url": "https://www.youtube.com/channel/UCKy1dAqELo0zrOtPkf0eTMw",
+    "subscriber_count": 19900000,
+    "viewer_count": 21537417112,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": [
+      {
+        "type": "youtube",
+        "value": "IGNGuides"
+      }
+    ]
+  },
+  {
+    "id": 84,
+    "platform": "youtube",
+    "name": "Windah Basudara",
+    "url": "https://www.youtube.com/channel/UCoIiiHof6BJ85PLuLkuxuhw",
+    "subscriber_count": 19900000,
+    "viewer_count": 5484790249,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 29,
+    "platform": "youtube",
+    "name": "Marmok",
+    "url": "https://www.youtube.com/channel/UCf31Gf5nCU8J6eUlr7QSU0w",
+    "subscriber_count": 19400000,
+    "viewer_count": 4014804714,
+    "collected_at": "2026-06-23 19:59:55",
+    "games": [
+      "Party Animals"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 30,
+    "platform": "youtube",
+    "name": "PrestonPlayz",
+    "url": "https://www.youtube.com/channel/UCJZam2u1G0syq3kyqrCXrNw",
+    "subscriber_count": 17500000,
+    "viewer_count": 8378057278,
+    "collected_at": "2026-06-23 19:59:55",
+    "games": [
+      "Party Animals"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "partnerships@tbnr.work"
+      }
+    ]
+  },
+  {
+    "id": 7,
+    "platform": "youtube",
+    "name": "Kuplinov ► Play",
+    "url": "https://www.youtube.com/channel/UCdKuE7a2QZeHPhDntXVZ91w",
+    "subscriber_count": 17300000,
+    "viewer_count": 8660225006,
+    "collected_at": "2026-06-23 19:58:13",
+    "games": [
+      "Golf With Your Friends"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 31,
+    "platform": "youtube",
+    "name": "Mythpat",
+    "url": "https://www.youtube.com/channel/UCx6F-rETGiz7xf_vkMmX2yQ",
+    "subscriber_count": 17300000,
+    "viewer_count": 4343565619,
+    "collected_at": "2026-06-23 19:59:55",
+    "games": [
+      "Party Animals"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 32,
+    "platform": "youtube",
+    "name": "PlayStation",
+    "url": "https://www.youtube.com/channel/UC-2Y8dQb0S6DtpxNgAKoJKA",
+    "subscriber_count": 17200000,
+    "viewer_count": 6262576516,
+    "collected_at": "2026-06-23 19:59:55",
+    "games": [
+      "Party Animals"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 85,
+    "platform": "youtube",
+    "name": "Auron",
+    "url": "https://www.youtube.com/channel/UCFR2oaNj02WnXkOgLH0iqOA",
+    "subscriber_count": 15800000,
+    "viewer_count": 4852961554,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 99,
+    "platform": "youtube",
+    "name": "TazerCraft",
+    "url": "https://www.youtube.com/channel/UCjBO43ykxlSs3j7F7EXcBUQ",
+    "subscriber_count": 15100000,
+    "viewer_count": 6269814534,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Tricky Towers"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "tazercraft@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 136,
+    "platform": "youtube",
+    "name": "Kwebbelkop",
+    "url": "https://www.youtube.com/channel/UCfLuMSIDmeWRYpuCQL0OJ6A",
+    "subscriber_count": 14900000,
+    "viewer_count": 7058215117,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": [
+      {
+        "type": "business_email",
+        "value": "contact@jvdbstudios.com"
+      }
+    ]
+  },
+  {
+    "id": 33,
+    "platform": "youtube",
+    "name": "Rubius Z",
+    "url": "https://www.youtube.com/channel/UCcjIvuxmWlS5IEQ0JdPV4Ng",
+    "subscriber_count": 14500000,
+    "viewer_count": 3566743716,
+    "collected_at": "2026-06-23 19:59:55",
+    "games": [
+      "Party Animals"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 8,
+    "platform": "youtube",
+    "name": "LipaoGamer",
+    "url": "https://www.youtube.com/channel/UCHuZmQ0lSW8TG81dVZZh5rw",
+    "subscriber_count": 13900000,
+    "viewer_count": 5254048184,
+    "collected_at": "2026-06-23 19:58:13",
+    "games": [
+      "Golf With Your Friends"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "lipaogamer@agenciacurta.com"
+      }
+    ]
+  },
+  {
+    "id": 48,
+    "platform": "youtube",
+    "name": "H2ODelirious",
+    "url": "https://www.youtube.com/channel/UCClNRixXlagwAd--5MwJKCw",
+    "subscriber_count": 13700000,
+    "viewer_count": 4664430605,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "Pummel Party",
+      "Tricky Towers",
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 137,
+    "platform": "youtube",
+    "name": "GWK",
+    "url": "https://www.youtube.com/channel/UCrkfdiZ4pF3f5waQaJtjXew",
+    "subscriber_count": 12600000,
+    "viewer_count": 5111522989,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "gwkpartnerships@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 9,
+    "platform": "youtube",
+    "name": "ItsFunneh",
+    "url": "https://www.youtube.com/channel/UCUk7VggtJdo9XYTy3Z5QVAw",
+    "subscriber_count": 12100000,
+    "viewer_count": 15855417449,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Party Animals",
+      "Pummel Party",
+      "Overcooked",
+      "Tricky Towers",
+      "Stick Fight: The Game"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 73,
+    "platform": "youtube",
+    "name": "Karim Juega",
+    "url": "https://www.youtube.com/channel/UCj_pcmy3zBqzouJe9hcpmpQ",
+    "subscriber_count": 11800000,
+    "viewer_count": 11329944439,
+    "collected_at": "2026-06-23 20:17:18",
+    "games": [
+      "Ultimate Chicken Horse"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 10,
+    "platform": "youtube",
+    "name": "Slogo",
+    "url": "https://www.youtube.com/channel/UCHdMK5Ef2El8KbD3L_WgANg",
+    "subscriber_count": 11700000,
+    "viewer_count": 9516240819,
+    "collected_at": "2026-06-23 20:17:18",
+    "games": [
+      "Golf With Your Friends",
+      "Ultimate Chicken Horse"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 34,
+    "platform": "youtube",
+    "name": "Silvio Gamer",
+    "url": "https://www.youtube.com/channel/UCCrA8ZN1J3S52wuF4vthZFQ",
+    "subscriber_count": 11200000,
+    "viewer_count": 4749784362,
+    "collected_at": "2026-06-23 19:59:55",
+    "games": [
+      "Party Animals"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "SilvioGamer@adamantagency.com"
+      },
+      {
+        "type": "email",
+        "value": "silviogamersubs@gmail.com"
+      },
+      {
+        "type": "twitter",
+        "value": "silviogamer"
+      }
+    ]
+  },
+  {
+    "id": 86,
+    "platform": "youtube",
+    "name": "Coisa de Nerd",
+    "url": "https://www.youtube.com/channel/UCuxfOdbKQy0tgGXcm9sjHiw",
+    "subscriber_count": 11100000,
+    "viewer_count": 3588228911,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "contato@coisadenerd.net"
+      }
+    ]
+  },
+  {
+    "id": 87,
+    "platform": "youtube",
+    "name": "Nintendo of America",
+    "url": "https://www.youtube.com/channel/UCGIY_O-8vW4rfX98KlMkvRg",
+    "subscriber_count": 10100000,
+    "viewer_count": 4037842236,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 35,
+    "platform": "youtube",
+    "name": "HEARTROCKER",
+    "url": "https://www.youtube.com/channel/UC4plRabXFGdAE6HP-tBQKdQ",
+    "subscriber_count": 9630000,
+    "viewer_count": 4119948691,
+    "collected_at": "2026-06-23 19:59:55",
+    "games": [
+      "Party Animals"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "heartrockerfantasy@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 74,
+    "platform": "youtube",
+    "name": "ElMariana Gaming",
+    "url": "https://www.youtube.com/channel/UC52YgT6TITyBpck82V_N_8g",
+    "subscriber_count": 9550000,
+    "viewer_count": 2259688639,
+    "collected_at": "2026-06-23 20:17:18",
+    "games": [
+      "Ultimate Chicken Horse"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 88,
+    "platform": "youtube",
+    "name": "BuzzFeed Multiplayer",
+    "url": "https://www.youtube.com/channel/UCBUVGPsJzc1U8SECMgBaMFw",
+    "subscriber_count": 9360000,
+    "viewer_count": 3669636209,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": [
+      {
+        "type": "twitter",
+        "value": "multiplayerBF"
+      }
+    ]
+  },
+  {
+    "id": 11,
+    "platform": "youtube",
+    "name": "SMii7Y",
+    "url": "https://www.youtube.com/channel/UCzXwjTI6c6mVn6oui_p6oiw",
+    "subscriber_count": 8730000,
+    "viewer_count": 3648008940,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Party Animals",
+      "Ultimate Chicken Horse",
+      "Tricky Towers",
+      "Stick Fight: The Game"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 89,
+    "platform": "youtube",
+    "name": "Smosh Games",
+    "url": "https://www.youtube.com/channel/UCJ2ZDzMRgSrxmwphstrm8Ww",
+    "subscriber_count": 8540000,
+    "viewer_count": 4102738543,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 49,
+    "platform": "youtube",
+    "name": "Gameplayrj",
+    "url": "https://www.youtube.com/channel/UCJAbkIY17zAmCTNQHH0bQoQ",
+    "subscriber_count": 8510000,
+    "viewer_count": 4150245014,
+    "collected_at": "2026-06-23 20:16:29",
+    "games": [
+      "Pummel Party"
+    ],
+    "contacts": [
+      {
+        "type": "instagram",
+        "value": "gameplayrj"
+      },
+      {
+        "type": "instagram",
+        "value": "odavyjones"
+      }
+    ]
+  },
+  {
+    "id": 12,
+    "platform": "youtube",
+    "name": "WILDCAT",
+    "url": "https://www.youtube.com/channel/UC-kOXc3gBwksVfmndSEz7jg",
+    "subscriber_count": 8010000,
+    "viewer_count": 3293374166,
+    "collected_at": "2026-06-23 19:58:13",
+    "games": [
+      "Golf With Your Friends"
+    ],
+    "contacts": [
+      {
+        "type": "business_email",
+        "value": "business@iamwildcat.net"
+      }
+    ]
+  },
+  {
+    "id": 13,
+    "platform": "youtube",
+    "name": "EstubeGaming",
+    "url": "https://www.youtube.com/channel/UC8z_uxBRoIjSeVRIeVaE9hQ",
+    "subscriber_count": 7780000,
+    "viewer_count": 4640879515,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Golf With Your Friends",
+      "Stick Fight: The Game"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "estubegaming@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 138,
+    "platform": "youtube",
+    "name": "videogamedunkey",
+    "url": "https://www.youtube.com/channel/UCsvn_Po0SmunchJYOWpOxMg",
+    "subscriber_count": 7570000,
+    "viewer_count": 4309612739,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 50,
+    "platform": "youtube",
+    "name": "Unchained_Off",
+    "url": "https://www.youtube.com/channel/UCiFyJ_EBmF2XJuR9buWE_3A",
+    "subscriber_count": 7290000,
+    "viewer_count": 4177141941,
+    "collected_at": "2026-06-23 20:16:29",
+    "games": [
+      "Pummel Party"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 90,
+    "platform": "youtube",
+    "name": "iHasCupquake",
+    "url": "https://www.youtube.com/channel/UCqg2eLFNUu3QN3dttNeOWkw",
+    "subscriber_count": 7130000,
+    "viewer_count": 3116738524,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 100,
+    "platform": "youtube",
+    "name": "The Yogscast",
+    "url": "https://www.youtube.com/channel/UCH-_hzb2ILSCo9ftVSnrCIQ",
+    "subscriber_count": 7060000,
+    "viewer_count": 4715295368,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Tricky Towers"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 51,
+    "platform": "youtube",
+    "name": "MortaL",
+    "url": "https://www.youtube.com/channel/UC7Q7pl0z0MrdayvmAnchlJQ",
+    "subscriber_count": 6960000,
+    "viewer_count": 1422711348,
+    "collected_at": "2026-06-23 20:16:29",
+    "games": [
+      "Pummel Party"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 36,
+    "platform": "youtube",
+    "name": "Obit",
+    "url": "https://www.youtube.com/channel/UCpxxQUGNgkns9i3EhLEHoQg",
+    "subscriber_count": 6440000,
+    "viewer_count": 2962601467,
+    "collected_at": "2026-06-23 19:59:55",
+    "games": [
+      "Party Animals"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 139,
+    "platform": "youtube",
+    "name": "Tyrecordslol",
+    "url": "https://www.youtube.com/channel/UC-A2WBfHTnWkhNvehNo-MaA",
+    "subscriber_count": 6060000,
+    "viewer_count": 5041569273,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": [
+      {
+        "type": "business_email",
+        "value": "Mcquay59@gmail.com"
+      },
+      {
+        "type": "email",
+        "value": "Tyrecordslol@youdaoads.com"
+      }
+    ]
+  },
+  {
+    "id": 37,
+    "platform": "youtube",
+    "name": "Chuy Mine",
+    "url": "https://www.youtube.com/channel/UCrppUjIbcQjh2Drz8UyuRVg",
+    "subscriber_count": 6030000,
+    "viewer_count": 2462496396,
+    "collected_at": "2026-06-23 19:59:55",
+    "games": [
+      "Party Animals"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "thechuymine@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 14,
+    "platform": "youtube",
+    "name": "special edd",
+    "url": "https://www.youtube.com/channel/UCel2B-6wZhvQHRAKXmpm1Ew",
+    "subscriber_count": 5870000,
+    "viewer_count": 1831534844,
+    "collected_at": "2026-06-23 20:17:18",
+    "games": [
+      "Party Animals",
+      "Ultimate Chicken Horse"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "eddievr@clickmgmt.com.au"
+      }
+    ]
+  },
+  {
+    "id": 15,
+    "platform": "youtube",
+    "name": "MM7Games",
+    "url": "https://www.youtube.com/channel/UCjB_adDAIxOL8GA4Y4OCt8g",
+    "subscriber_count": 5640000,
+    "viewer_count": 3420793752,
+    "collected_at": "2026-06-23 19:58:13",
+    "games": [
+      "Golf With Your Friends"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 101,
+    "platform": "youtube",
+    "name": "GameGrumps",
+    "url": "https://www.youtube.com/channel/UC9CuvdOVfMPvKCiwdGKL3cQ",
+    "subscriber_count": 5450000,
+    "viewer_count": 7364845685,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Tricky Towers"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 75,
+    "platform": "youtube",
+    "name": "FrostbiteGaming",
+    "url": "https://www.youtube.com/channel/UC9PD3EIAA-vtGLZgYXG3q0A",
+    "subscriber_count": 5420000,
+    "viewer_count": 3831155438,
+    "collected_at": "2026-06-23 20:17:18",
+    "games": [
+      "Ultimate Chicken Horse"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "officialfrosty99@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 16,
+    "platform": "youtube",
+    "name": "SQUEEZIE GAMING",
+    "url": "https://www.youtube.com/channel/UCY-_QmcW09PHAImgVnKxU2g",
+    "subscriber_count": 5080000,
+    "viewer_count": 2816171670,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Golf With Your Friends",
+      "Pummel Party",
+      "Ultimate Chicken Horse",
+      "Overcooked"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 102,
+    "platform": "youtube",
+    "name": "BasicallyIDoWrk",
+    "url": "https://www.youtube.com/channel/UCbgtuRStKI_5ACSjubSTUPA",
+    "subscriber_count": 4770000,
+    "viewer_count": 1267019071,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Tricky Towers"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 140,
+    "platform": "youtube",
+    "name": "Fudgy",
+    "url": "https://www.youtube.com/channel/UCh7gme0kfhUZXG3NDqpeL_g",
+    "subscriber_count": 4430000,
+    "viewer_count": 2478705718,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "fudgybusiness@hotmail.com"
+      }
+    ]
+  },
+  {
+    "id": 38,
+    "platform": "youtube",
+    "name": "SMii7Yplus",
+    "url": "https://www.youtube.com/channel/UC-gW4TeZAlKm7UATp24JsWQ",
+    "subscriber_count": 4370000,
+    "viewer_count": 1505028191,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Party Animals",
+      "Overcooked"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 17,
+    "platform": "youtube",
+    "name": "Mini Ladd",
+    "url": "https://www.youtube.com/channel/UCQCnMFr8uHBaMTaNBhych_A",
+    "subscriber_count": 4330000,
+    "viewer_count": 1464181545,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Golf With Your Friends",
+      "Tricky Towers"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 52,
+    "platform": "youtube",
+    "name": "CaRtOoNz",
+    "url": "https://www.youtube.com/channel/UCdQWs2nw6w77Rw0t-37a4OA",
+    "subscriber_count": 4040000,
+    "viewer_count": 1582236158,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "Pummel Party",
+      "Tricky Towers",
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 53,
+    "platform": "youtube",
+    "name": "Lives do alanzoka",
+    "url": "https://www.youtube.com/channel/UC5aVIcrd8YUcjlFeRMmJMsA",
+    "subscriber_count": 3960000,
+    "viewer_count": 1861098438,
+    "collected_at": "2026-06-23 20:17:18",
+    "games": [
+      "Pummel Party",
+      "Ultimate Chicken Horse"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "contato@alanzoka.com.br"
+      }
+    ]
+  },
+  {
+    "id": 54,
+    "platform": "youtube",
+    "name": "GermanLetsPlay",
+    "url": "https://www.youtube.com/channel/UCfWtqPyBMG_7i33OeeNsZZw",
+    "subscriber_count": 3750000,
+    "viewer_count": 2735774872,
+    "collected_at": "2026-06-23 20:16:29",
+    "games": [
+      "Pummel Party"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "hello@channel-f.de"
+      }
+    ]
+  },
+  {
+    "id": 55,
+    "platform": "youtube",
+    "name": "Elraenn",
+    "url": "https://www.youtube.com/channel/UC51-ljNFrvY5ZmV0C_61XcA",
+    "subscriber_count": 3690000,
+    "viewer_count": 1447784626,
+    "collected_at": "2026-06-23 20:17:18",
+    "games": [
+      "Pummel Party",
+      "Ultimate Chicken Horse"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 116,
+    "platform": "youtube",
+    "name": "Rato Borrachudo",
+    "url": "https://www.youtube.com/channel/UCDt4dFdsJyjjA8mQULkOLLw",
+    "subscriber_count": 3690000,
+    "viewer_count": 750354196,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 103,
+    "platform": "youtube",
+    "name": "Anima",
+    "url": "https://www.youtube.com/channel/UCHZl_sLl4kGZSkrPBrWb_aQ",
+    "subscriber_count": 3610000,
+    "viewer_count": 1240565882,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Tricky Towers"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 39,
+    "platform": "youtube",
+    "name": "ELDED",
+    "url": "https://www.youtube.com/channel/UCejggbBHSAIx8wvnc4x7HSg",
+    "subscriber_count": 3600000,
+    "viewer_count": 1338827886,
+    "collected_at": "2026-06-23 19:59:55",
+    "games": [
+      "Party Animals"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 91,
+    "platform": "youtube",
+    "name": "HamoodeG",
+    "url": "https://www.youtube.com/channel/UC77Fy5PwlSnon_NNoCYSQEg",
+    "subscriber_count": 3550000,
+    "viewer_count": 2196126284,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 76,
+    "platform": "youtube",
+    "name": "LetsPlay",
+    "url": "https://www.youtube.com/channel/UCkxctb0jr8vwa4Do6c6su0Q",
+    "subscriber_count": 3490000,
+    "viewer_count": 3200221159,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Ultimate Chicken Horse",
+      "Overcooked"
+    ],
+    "contacts": [
+      {
+        "type": "youtube",
+        "value": "fckfacepod"
+      }
+    ]
+  },
+  {
+    "id": 117,
+    "platform": "youtube",
+    "name": "EazySpeezy",
+    "url": "https://www.youtube.com/channel/UCQSEAbOs6vsJfy7WN7iYaGQ",
+    "subscriber_count": 3350000,
+    "viewer_count": 1139285800,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 18,
+    "platform": "youtube",
+    "name": "Dan and Phil",
+    "url": "https://www.youtube.com/channel/UCuhwvTYFvVZjyBVXc9T7CrA",
+    "subscriber_count": 3100000,
+    "viewer_count": 897761888,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Golf With Your Friends",
+      "Overcooked"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 19,
+    "platform": "youtube",
+    "name": "Socks Games",
+    "url": "https://www.youtube.com/channel/UC-XTuGOHIF7vWvbhJZ56wbw",
+    "subscriber_count": 2960000,
+    "viewer_count": 1205544154,
+    "collected_at": "2026-06-23 20:17:18",
+    "games": [
+      "Golf With Your Friends",
+      "Ultimate Chicken Horse"
+    ],
+    "contacts": [
+      {
+        "type": "instagram",
+        "value": "socksfor1"
+      },
+      {
+        "type": "twitter",
+        "value": "Socksfor1"
+      }
+    ]
+  },
+  {
+    "id": 56,
+    "platform": "youtube",
+    "name": "RTGame",
+    "url": "https://www.youtube.com/channel/UCRC6cNamj9tYAO6h_RXd5xA",
+    "subscriber_count": 2960000,
+    "viewer_count": 1513298719,
+    "collected_at": "2026-06-23 20:16:29",
+    "games": [
+      "Pummel Party"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 92,
+    "platform": "youtube",
+    "name": "berleezy",
+    "url": "https://www.youtube.com/channel/UCp1VWSTrt2cUBInkn4dUmDA",
+    "subscriber_count": 2920000,
+    "viewer_count": 986897206,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": [
+      {
+        "type": "instagram",
+        "value": "berleezy"
+      },
+      {
+        "type": "twitter",
+        "value": "berleezy"
+      }
+    ]
+  },
+  {
+    "id": 141,
+    "platform": "youtube",
+    "name": "MIKAN",
+    "url": "https://www.youtube.com/channel/UCRfxI01xPgzql7ZBS6WlebQ",
+    "subscriber_count": 2870000,
+    "viewer_count": 2720380059,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 57,
+    "platform": "youtube",
+    "name": "SpontanaBlack",
+    "url": "https://www.youtube.com/channel/UCppK6hGo5L-dmrryG5T0K0Q",
+    "subscriber_count": 2820000,
+    "viewer_count": 1070364170,
+    "collected_at": "2026-06-23 20:16:29",
+    "games": [
+      "Pummel Party"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "business@montanablack.de"
+      },
+      {
+        "type": "email",
+        "value": "info@it-recht.net"
+      }
+    ]
+  },
+  {
+    "id": 20,
+    "platform": "youtube",
+    "name": "Sarinha",
+    "url": "https://www.youtube.com/channel/UCgGrarbCLJIImS-sVr8SnkA",
+    "subscriber_count": 2780000,
+    "viewer_count": 925887143,
+    "collected_at": "2026-06-23 19:58:13",
+    "games": [
+      "Golf With Your Friends"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 21,
+    "platform": "youtube",
+    "name": "Wankil Studio - Laink et Terracid",
+    "url": "https://www.youtube.com/channel/UCYGjxo5ifuhnmvhPvCc3DJQ",
+    "subscriber_count": 2740000,
+    "viewer_count": 2746535756,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Golf With Your Friends",
+      "Tricky Towers"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 104,
+    "platform": "youtube",
+    "name": "Sykkuno",
+    "url": "https://www.youtube.com/channel/UCRAEUAmW9kletIzOxhpLRFw",
+    "subscriber_count": 2620000,
+    "viewer_count": 522785909,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Tricky Towers"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 142,
+    "platform": "youtube",
+    "name": "Nanacool8",
+    "url": "https://www.youtube.com/channel/UCVUCIzH4XYIWS5xOIxKF0Vg",
+    "subscriber_count": 2470000,
+    "viewer_count": 1510041625,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "business@nanacool8.com"
+      }
+    ]
+  },
+  {
+    "id": 143,
+    "platform": "youtube",
+    "name": "Slmccl",
+    "url": "https://www.youtube.com/channel/UC_tCuH9uVrUP-BqN4lSRwyg",
+    "subscriber_count": 2270000,
+    "viewer_count": 399852117,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "Slimecicle@night.co"
+      }
+    ]
+  },
+  {
+    "id": 58,
+    "platform": "youtube",
+    "name": "Joe Speen",
+    "url": "https://www.youtube.com/channel/UCLizDDpxiFRoqTLlMyGX7lQ",
+    "subscriber_count": 2230000,
+    "viewer_count": 1348630756,
+    "collected_at": "2026-06-23 20:16:29",
+    "games": [
+      "Pummel Party"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "joe_speen@etc.moscow"
+      }
+    ]
+  },
+  {
+    "id": 118,
+    "platform": "youtube",
+    "name": "DarkViperAU",
+    "url": "https://www.youtube.com/channel/UCV6mNrW8CrmWtcxWfQXy11g",
+    "subscriber_count": 2220000,
+    "viewer_count": 2951541240,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 93,
+    "platform": "youtube",
+    "name": "Leika Gaming",
+    "url": "https://www.youtube.com/channel/UCK-MkOW15OyC6aWw0HQE9hw",
+    "subscriber_count": 2180000,
+    "viewer_count": 1298243688,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "partnership@leika.studio"
+      },
+      {
+        "type": "instagram",
+        "value": "dienaftr"
+      },
+      {
+        "type": "instagram",
+        "value": "garudita"
+      },
+      {
+        "type": "instagram",
+        "value": "leikamanagement"
+      }
+    ]
+  },
+  {
+    "id": 59,
+    "platform": "youtube",
+    "name": "Mr. Fruit",
+    "url": "https://www.youtube.com/channel/UCV96ER3MAI1S81HH6l9wwbQ",
+    "subscriber_count": 2100000,
+    "viewer_count": 1073745616,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Pummel Party",
+      "Tricky Towers"
+    ],
+    "contacts": [
+      {
+        "type": "discord",
+        "value": "HouseFruit"
+      },
+      {
+        "type": "email",
+        "value": "mrfruitbusiness@gmail.com"
+      },
+      {
+        "type": "instagram",
+        "value": "mrfruitgaming"
+      },
+      {
+        "type": "twitter",
+        "value": "MrFruitYT"
+      },
+      {
+        "type": "youtube",
+        "value": "GGoverEZ_Podcast"
+      },
+      {
+        "type": "youtube",
+        "value": "MrFruitPokemon"
+      },
+      {
+        "type": "youtube",
+        "value": "Mr_Fruit_Plays"
+      },
+      {
+        "type": "youtube",
+        "value": "mrfruituncut"
+      }
+    ]
+  },
+  {
+    "id": 40,
+    "platform": "youtube",
+    "name": "Funny Troll",
+    "url": "https://www.youtube.com/channel/UCMh9PVSYPRzrCC7HrSsaBlQ",
+    "subscriber_count": 2030000,
+    "viewer_count": 600302578,
+    "collected_at": "2026-06-23 19:59:55",
+    "games": [
+      "Party Animals"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 105,
+    "platform": "youtube",
+    "name": "Bob Lennon",
+    "url": "https://www.youtube.com/channel/UCo0U1tbk3YbqiLDhkeWOviQ",
+    "subscriber_count": 2020000,
+    "viewer_count": 1118245677,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Tricky Towers"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 60,
+    "platform": "youtube",
+    "name": "BARAA",
+    "url": "https://www.youtube.com/channel/UC8yz63MOHuisomdQOgsYbwQ",
+    "subscriber_count": 1990000,
+    "viewer_count": 246480765,
+    "collected_at": "2026-06-23 20:16:29",
+    "games": [
+      "Pummel Party"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 61,
+    "platform": "youtube",
+    "name": "AQUISI",
+    "url": "https://www.youtube.com/channel/UC7jtSuXXamDt0eKFfYfGLDQ",
+    "subscriber_count": 1830000,
+    "viewer_count": 1208112828,
+    "collected_at": "2026-06-23 20:17:18",
+    "games": [
+      "Pummel Party",
+      "Ultimate Chicken Horse"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 41,
+    "platform": "youtube",
+    "name": "Shabab Gaming ",
+    "url": "https://www.youtube.com/channel/UCYIYaGS0c9eHQkzE_zNYeNg",
+    "subscriber_count": 1720000,
+    "viewer_count": 335093249,
+    "collected_at": "2026-06-23 19:59:55",
+    "games": [
+      "Party Animals"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "Business@aburob.com"
+      },
+      {
+        "type": "email",
+        "value": "Shabab@TcfService.com"
+      }
+    ]
+  },
+  {
+    "id": 144,
+    "platform": "youtube",
+    "name": "Pryszard Android iOS Gameplays",
+    "url": "https://www.youtube.com/channel/UCRf4-iCB2SXg9OsuFauzlsw",
+    "subscriber_count": 1710000,
+    "viewer_count": 1071492005,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 106,
+    "platform": "youtube",
+    "name": "Kryoz",
+    "url": "https://www.youtube.com/channel/UCi-QR0jFereBXjU9SBxcdeg",
+    "subscriber_count": 1670000,
+    "viewer_count": 522766671,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Tricky Towers"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 22,
+    "platform": "youtube",
+    "name": "The Boys React",
+    "url": "https://www.youtube.com/channel/UC2CBT8IHw9ZL4RjNevC8h0Q",
+    "subscriber_count": 1600000,
+    "viewer_count": 284775916,
+    "collected_at": "2026-06-23 19:58:13",
+    "games": [
+      "Golf With Your Friends"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "theboys@clickmgmt.com.au"
+      }
+    ]
+  },
+  {
+    "id": 77,
+    "platform": "youtube",
+    "name": "Get Good Gaming",
+    "url": "https://www.youtube.com/channel/UCJLFizUO3gCQnyiYKMYvUgg",
+    "subscriber_count": 1600000,
+    "viewer_count": 641504959,
+    "collected_at": "2026-06-23 20:17:18",
+    "games": [
+      "Ultimate Chicken Horse"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 23,
+    "platform": "youtube",
+    "name": "Sam Tabor Gaming",
+    "url": "https://www.youtube.com/channel/UCWp3_e0cQvBHVpb_pTge5FQ",
+    "subscriber_count": 1580000,
+    "viewer_count": 955907585,
+    "collected_at": "2026-06-23 19:58:13",
+    "games": [
+      "Golf With Your Friends"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "SamTabor@mythictalent.com"
+      }
+    ]
+  },
+  {
+    "id": 145,
+    "platform": "youtube",
+    "name": "Rickster2344",
+    "url": "https://www.youtube.com/channel/UChWY3HddivlKeOLHEVyb1tw",
+    "subscriber_count": 1540000,
+    "viewer_count": 1378356674,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": [
+      {
+        "type": "business_email",
+        "value": "rickster2344@outlook.com"
+      }
+    ]
+  },
+  {
+    "id": 94,
+    "platform": "youtube",
+    "name": "Slushy Noobz",
+    "url": "https://www.youtube.com/channel/UC5ig0ubThGbS1sVlexAQySw",
+    "subscriber_count": 1510000,
+    "viewer_count": 242220262,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "ashley@peterandfish.com"
+      }
+    ]
+  },
+  {
+    "id": 119,
+    "platform": "youtube",
+    "name": "Prism",
+    "url": "https://www.youtube.com/channel/UCHhaGTJK_js9BRd5UEiTFwg",
+    "subscriber_count": 1490000,
+    "viewer_count": 4212169800,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 62,
+    "platform": "youtube",
+    "name": "iNoobChannel",
+    "url": "https://www.youtube.com/channel/UCLtf1GhnARGHtP5jWcEmHLQ",
+    "subscriber_count": 1450000,
+    "viewer_count": 920677599,
+    "collected_at": "2026-06-23 20:16:29",
+    "games": [
+      "Pummel Party"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 107,
+    "platform": "youtube",
+    "name": "Jaidefinichon GOTH",
+    "url": "https://www.youtube.com/channel/UCL7JL6A3ClFkopUVlugiVZg",
+    "subscriber_count": 1450000,
+    "viewer_count": 654076751,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "Tricky Towers",
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 63,
+    "platform": "youtube",
+    "name": "Solidarity",
+    "url": "https://www.youtube.com/channel/UC6XAct-Bus4x3mYz3VC_HUw",
+    "subscriber_count": 1340000,
+    "viewer_count": 167072574,
+    "collected_at": "2026-06-23 20:16:29",
+    "games": [
+      "Pummel Party"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 42,
+    "platform": "youtube",
+    "name": "HecticSherlock Gaming",
+    "url": "https://www.youtube.com/channel/UCsrWHWH8eHRjtWnY0TE3YNg",
+    "subscriber_count": 1330000,
+    "viewer_count": 3692298748,
+    "collected_at": "2026-06-23 19:59:55",
+    "games": [
+      "Party Animals"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "hecticx@outlook.com"
+      }
+    ]
+  },
+  {
+    "id": 43,
+    "platform": "youtube",
+    "name": "Souzones",
+    "url": "https://www.youtube.com/channel/UCK3NkZPs0BurxabhtnSDa3g",
+    "subscriber_count": 1320000,
+    "viewer_count": 587631432,
+    "collected_at": "2026-06-23 19:59:55",
+    "games": [
+      "Party Animals"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 146,
+    "platform": "youtube",
+    "name": "Supreme Duelist - Neron's Brother",
+    "url": "https://www.youtube.com/channel/UCN-4imQmz1_EpEIZ7bjegaQ",
+    "subscriber_count": 1280000,
+    "viewer_count": 139574950,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "nerons.onfire@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 78,
+    "platform": "youtube",
+    "name": "Rico The Giant",
+    "url": "https://www.youtube.com/channel/UC5E_qeDbcm41nEPNaHDmXHA",
+    "subscriber_count": 1220000,
+    "viewer_count": 161624445,
+    "collected_at": "2026-06-23 20:17:18",
+    "games": [
+      "Ultimate Chicken Horse"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 120,
+    "platform": "youtube",
+    "name": "Seanie Dew",
+    "url": "https://www.youtube.com/channel/UC9OucCej3Rx7tS3O7df4ReA",
+    "subscriber_count": 1180000,
+    "viewer_count": 784568912,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 64,
+    "platform": "youtube",
+    "name": "Trick2G",
+    "url": "https://www.youtube.com/channel/UCuSrv3qgQA7SSi6R9bWag5A",
+    "subscriber_count": 1110000,
+    "viewer_count": 642065609,
+    "collected_at": "2026-06-23 20:16:29",
+    "games": [
+      "Pummel Party"
+    ],
+    "contacts": [
+      {
+        "type": "discord",
+        "value": "trick2g"
+      },
+      {
+        "type": "email",
+        "value": "trick2g@trick2g.org"
+      },
+      {
+        "type": "instagram",
+        "value": "trick2g"
+      },
+      {
+        "type": "tiktok",
+        "value": "trick5g"
+      },
+      {
+        "type": "twitter",
+        "value": "trick2g"
+      }
+    ]
+  },
+  {
+    "id": 65,
+    "platform": "youtube",
+    "name": "TechyCrew",
+    "url": "https://www.youtube.com/channel/UCTU3m4rCUS-7qXuHK-j9Uqw",
+    "subscriber_count": 1070000,
+    "viewer_count": 649319192,
+    "collected_at": "2026-06-23 20:16:29",
+    "games": [
+      "Pummel Party"
+    ],
+    "contacts": [
+      {
+        "type": "business_email",
+        "value": "techysbusiness@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 121,
+    "platform": "youtube",
+    "name": "Save Manual",
+    "url": "https://www.youtube.com/channel/UCpnI9qlEYFCFRVo2IT3jBqg",
+    "subscriber_count": 1040000,
+    "viewer_count": 288914708,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "savemanual@epicdigitais.com.br"
+      }
+    ]
+  },
+  {
+    "id": 24,
+    "platform": "youtube",
+    "name": "Fandra Octoramonth",
+    "url": "https://www.youtube.com/channel/UCbuiDvTnG1P3GduXnm-jHmw",
+    "subscriber_count": 1010000,
+    "viewer_count": 244868229,
+    "collected_at": "2026-06-23 19:58:13",
+    "games": [
+      "Golf With Your Friends"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "fandraocto@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 147,
+    "platform": "youtube",
+    "name": "KasubukTQ",
+    "url": "https://www.youtube.com/channel/UCO1FJ6JSgNTWXx3aBLRNV6w",
+    "subscriber_count": 1010000,
+    "viewer_count": 400000442,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 79,
+    "platform": "youtube",
+    "name": "TheVR",
+    "url": "https://www.youtube.com/channel/UCrpWCVp9FuGA8OnGtA0rgsw",
+    "subscriber_count": 920000,
+    "viewer_count": 434866903,
+    "collected_at": "2026-06-23 20:17:18",
+    "games": [
+      "Ultimate Chicken Horse"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 108,
+    "platform": "youtube",
+    "name": "BereghostGames",
+    "url": "https://www.youtube.com/channel/UC83X2fsfYM9YQIwGCmkVzPw",
+    "subscriber_count": 915000,
+    "viewer_count": 786378833,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Tricky Towers"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 122,
+    "platform": "youtube",
+    "name": "tinyBuildGAMES",
+    "url": "https://www.youtube.com/channel/UCHLuN_JL66bD8fdJWmQ-gNw",
+    "subscriber_count": 862000,
+    "viewer_count": 381219507,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 109,
+    "platform": "youtube",
+    "name": "Wankil Studio - Les VOD",
+    "url": "https://www.youtube.com/channel/UCY3Uw6Vdkk8KvY5fEq1iTpA",
+    "subscriber_count": 823000,
+    "viewer_count": 407473307,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Tricky Towers"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 110,
+    "platform": "youtube",
+    "name": "Disguised Toast 2",
+    "url": "https://www.youtube.com/channel/UCfl_9KvN0Mjre_JmSDmbBlA",
+    "subscriber_count": 674000,
+    "viewer_count": 131046348,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Tricky Towers"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 123,
+    "platform": "youtube",
+    "name": "RDC Live",
+    "url": "https://www.youtube.com/channel/UCOnECY8FBKKPVi5ZsSgXPJA",
+    "subscriber_count": 666000,
+    "viewer_count": 426898953,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 44,
+    "platform": "youtube",
+    "name": "Cosmo",
+    "url": "https://www.youtube.com/channel/UC9tlPHOKGpdqFrwCFf3DrqQ",
+    "subscriber_count": 624000,
+    "viewer_count": 449137056,
+    "collected_at": "2026-06-23 19:59:55",
+    "games": [
+      "Party Animals"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 25,
+    "platform": "youtube",
+    "name": "Legends of Gaming NL",
+    "url": "https://www.youtube.com/channel/UC97XthQ7oIOfAWIGPoyFDYQ",
+    "subscriber_count": 536000,
+    "viewer_count": 206060423,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Golf With Your Friends",
+      "Tricky Towers"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 95,
+    "platform": "youtube",
+    "name": "Stumpt",
+    "url": "https://www.youtube.com/channel/UCVH4oOW0CBJ1W_WsJKd_62Q",
+    "subscriber_count": 535000,
+    "viewer_count": 314597134,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": [
+      {
+        "type": "twitter",
+        "value": "doseonetweets"
+      }
+    ]
+  },
+  {
+    "id": 66,
+    "platform": "youtube",
+    "name": "Best Of du Grenier",
+    "url": "https://www.youtube.com/channel/UClK4fpmIAz8V1BVafysM2WA",
+    "subscriber_count": 504000,
+    "viewer_count": 337664066,
+    "collected_at": "2026-06-23 20:16:29",
+    "games": [
+      "Pummel Party"
+    ],
+    "contacts": [
+      {
+        "type": "youtube",
+        "value": "VODduGrenier"
+      }
+    ]
+  },
+  {
+    "id": 45,
+    "platform": "youtube",
+    "name": "Stentric",
+    "url": "https://www.youtube.com/channel/UCd0_xAYcmpuzaYuFpmEJQHA",
+    "subscriber_count": 488000,
+    "viewer_count": 295186334,
+    "collected_at": "2026-06-23 19:59:55",
+    "games": [
+      "Party Animals"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "stentricbusiness@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 111,
+    "platform": "youtube",
+    "name": "mistermv",
+    "url": "https://www.youtube.com/channel/UCus9EeXDcLaCJhVXYd6PJcg",
+    "subscriber_count": 472000,
+    "viewer_count": 289280736,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Tricky Towers"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 96,
+    "platform": "youtube",
+    "name": "MGC Let's Play",
+    "url": "https://www.youtube.com/channel/UCyTcCCMxgmVF9-AjBX2n0PQ",
+    "subscriber_count": 455000,
+    "viewer_count": 539862929,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 148,
+    "platform": "youtube",
+    "name": "Dude Stick",
+    "url": "https://www.youtube.com/channel/UCVtrSyJp6pb3h8h0mujLotA",
+    "subscriber_count": 433000,
+    "viewer_count": 101777595,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 149,
+    "platform": "youtube",
+    "name": "Z Arcade",
+    "url": "https://www.youtube.com/channel/UCXDEYsTblULXrl2Y9wGIKsA",
+    "subscriber_count": 377000,
+    "viewer_count": 152635676,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 112,
+    "platform": "youtube",
+    "name": "Rocket Beans Gaming",
+    "url": "https://www.youtube.com/channel/UCtSP1OA6jO4quIGLae7Fb4g",
+    "subscriber_count": 360000,
+    "viewer_count": 493218755,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Tricky Towers"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "sales@rocketbeans.de"
+      }
+    ]
+  },
+  {
+    "id": 150,
+    "platform": "youtube",
+    "name": "BEST android GAMES",
+    "url": "https://www.youtube.com/channel/UCWHrp51lXJXoLl78lc7Lz2w",
+    "subscriber_count": 259000,
+    "viewer_count": 145440568,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 67,
+    "platform": "youtube",
+    "name": "PG",
+    "url": "https://www.youtube.com/channel/UCgaHGITm6HIjMlrGainZSXQ",
+    "subscriber_count": 224000,
+    "viewer_count": 25634440,
+    "collected_at": "2026-06-23 20:16:29",
+    "games": [
+      "Pummel Party"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "Ratedpgbusiness@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 113,
+    "platform": "youtube",
+    "name": "Geometry dash Boffis",
+    "url": "https://www.youtube.com/channel/UCimlrW55PWRJc8tCIE6Goog",
+    "subscriber_count": 211000,
+    "viewer_count": 69494463,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Tricky Towers"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 151,
+    "platform": "youtube",
+    "name": "TABS LABS",
+    "url": "https://www.youtube.com/channel/UC4_hS8FMz1vhazCA4boHc6w",
+    "subscriber_count": 198000,
+    "viewer_count": 95561877,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 124,
+    "platform": "youtube",
+    "name": "Isto Inc.",
+    "url": "https://www.youtube.com/channel/UCgpGbh7d0X3-RBVYC4MQEEw",
+    "subscriber_count": 183000,
+    "viewer_count": 26340989,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": [
+      {
+        "type": "youtube",
+        "value": "isto_inc_2"
+      }
+    ]
+  },
+  {
+    "id": 125,
+    "platform": "youtube",
+    "name": "AQUINO largo",
+    "url": "https://www.youtube.com/channel/UC2cJqDQHXc4mUFRKN3KNxYQ",
+    "subscriber_count": 183000,
+    "viewer_count": 32245866,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 126,
+    "platform": "youtube",
+    "name": "Aspecticor",
+    "url": "https://www.youtube.com/channel/UCICiZl0IRinmgAG3cB3psbQ",
+    "subscriber_count": 161000,
+    "viewer_count": 240082045,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "aspecticor@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 127,
+    "platform": "youtube",
+    "name": "Maximum",
+    "url": "https://www.youtube.com/channel/UC8cVno7WVooCpLvjJUhFtoA",
+    "subscriber_count": 152000,
+    "viewer_count": 22395121,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 97,
+    "platform": "youtube",
+    "name": "Thambiyaru Gaming",
+    "url": "https://www.youtube.com/channel/UC4nOz6qmCgSVcqEaaZt-Wjg",
+    "subscriber_count": 78800,
+    "viewer_count": 47225402,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": [
+      {
+        "type": "email",
+        "value": "remorockstar.collab@gmail.com"
+      }
+    ]
+  },
+  {
+    "id": 128,
+    "platform": "youtube",
+    "name": "Nerdi",
+    "url": "https://www.youtube.com/channel/UC6biibPR-2NJtoH5hp_rFBA",
+    "subscriber_count": 58300,
+    "viewer_count": 9547662,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": [
+      {
+        "type": "twitter",
+        "value": "deepspacialrift"
+      },
+      {
+        "type": "twitter",
+        "value": "trixileee_"
+      }
+    ]
+  },
+  {
+    "id": 80,
+    "platform": "youtube",
+    "name": "BojackUCH",
+    "url": "https://www.youtube.com/channel/UCYrlU3szPFE_ImXYGS5VIiQ",
+    "subscriber_count": 40100,
+    "viewer_count": 7254156,
+    "collected_at": "2026-06-23 20:17:18",
+    "games": [
+      "Ultimate Chicken Horse"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 46,
+    "platform": "youtube",
+    "name": "GoodFellas Gaming",
+    "url": "https://www.youtube.com/channel/UC0qaslKS8I3ENU0jRo5Le_w",
+    "subscriber_count": 40000,
+    "viewer_count": 112861812,
+    "collected_at": "2026-06-23 19:59:55",
+    "games": [
+      "Party Animals"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 152,
+    "platform": "youtube",
+    "name": "Herozen",
+    "url": "https://www.youtube.com/channel/UCxVaaSzez3sCHl1opnxy9jg",
+    "subscriber_count": 24700,
+    "viewer_count": 12014949,
+    "collected_at": "2026-06-23 20:23:58",
+    "games": [
+      "Stick Fight: The Game"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 129,
+    "platform": "youtube",
+    "name": "ThatHomieDemon",
+    "url": "https://www.youtube.com/channel/UC1hu9W_lfus52Zz8o73-AmA",
+    "subscriber_count": 8050,
+    "viewer_count": 4299474,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 130,
+    "platform": "youtube",
+    "name": "YRnansFLIPflop",
+    "url": "https://www.youtube.com/channel/UCA2fqIs77zYgyx75Hr0ZpyQ",
+    "subscriber_count": 7750,
+    "viewer_count": 16120472,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 131,
+    "platform": "youtube",
+    "name": "Taters McShit",
+    "url": "https://www.youtube.com/channel/UCKiLcUX_O14XSAZOifDKlKA",
+    "subscriber_count": 3790,
+    "viewer_count": 1097805,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 114,
+    "platform": "youtube",
+    "name": "Chaosutopia",
+    "url": "https://www.youtube.com/channel/UCkn1-4ynOQ8Cb2D25REDxPQ",
+    "subscriber_count": 1880,
+    "viewer_count": 1876187,
+    "collected_at": "2026-06-23 20:21:03",
+    "games": [
+      "Tricky Towers"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 98,
+    "platform": "youtube",
+    "name": "Tom's World",
+    "url": "https://www.youtube.com/channel/UCBr-XBpBADtfkXs-Hc8mAoA",
+    "subscriber_count": 1390,
+    "viewer_count": 1775079,
+    "collected_at": "2026-06-23 20:19:21",
+    "games": [
+      "Overcooked"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 132,
+    "platform": "youtube",
+    "name": "testo",
+    "url": "https://www.youtube.com/channel/UCZOJP6t-qmsPCQopfWj_9HQ",
+    "subscriber_count": 732,
+    "viewer_count": 401305,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 133,
+    "platform": "youtube",
+    "name": "Incursio SR",
+    "url": "https://www.youtube.com/channel/UCHfQXVaeptHq7_Xi-nY0aLQ",
+    "subscriber_count": 651,
+    "viewer_count": 244477,
+    "collected_at": "2026-06-23 20:22:41",
+    "games": [
+      "SpeedRunners"
+    ],
+    "contacts": []
+  },
+  {
+    "id": 68,
+    "platform": "youtube",
+    "name": "RebuiltGames",
+    "url": "https://www.youtube.com/channel/UCHXolBHEnAzMeGlW5tdxpLQ",
+    "subscriber_count": 438,
+    "viewer_count": 869148,
+    "collected_at": "2026-06-23 20:16:29",
+    "games": [
+      "Pummel Party"
+    ],
+    "contacts": []
+  }
+]

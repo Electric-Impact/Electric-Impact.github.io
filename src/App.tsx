@@ -3,6 +3,7 @@ import { BuilderComponent, builder, useIsPreviewing } from "@builder.io/react"
 import Footer from "./components/footer/Footer"
 import Nav from "./components/nav/Nav"
 import registerBuilderComponents from "./utils/register-builder-components"
+import CreatorContactsPage from "./components/creator-contacts/CreatorContactsPage"
 
 // Put your API key here
 builder.init("236f25c22ba94096b289a910d80952f1")
@@ -44,6 +45,16 @@ const App: React.FC = () => {
   // a 404 page from your code.
   // The following hypothetical
   // <FourOhFour> is placeholder.
+  if (window.location.pathname === '/contacts') {
+    return (
+      <>
+        <Nav />
+        <CreatorContactsPage />
+        <Footer />
+      </>
+    )
+  }
+
   if (notFound && !isPreviewingInBuilder) {
     return <>404</>
   }
