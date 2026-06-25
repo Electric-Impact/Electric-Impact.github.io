@@ -1,0 +1,349 @@
+/* ── password gate ─────────────────────────────────────────────────────────── */
+
+.cc-gate {
+  min-height: 100vh;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  background: #202020;
+}
+
+.cc-gate-form {
+  background: #2B2B2B;
+  border: 1px solid #404040;
+  border-radius: 12px;
+  padding: 2.5rem 2rem;
+  width: 100%;
+  max-width: 360px;
+  display: flex;
+  flex-direction: column;
+  gap: 0.8rem;
+}
+
+.cc-gate-title {
+  margin: 0 0 0.1rem;
+  font-size: 1.5rem;
+  font-weight: 700;
+  color: #ffffff;
+  font-family: 'Righteous', sans-serif;
+}
+
+.cc-gate-sub {
+  margin: 0;
+  font-size: 0.875rem;
+  color: #AAAAAA;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.cc-gate-input {
+  padding: 0.65rem 0.85rem;
+  font-size: 1rem;
+  background: #202020;
+  border: 1px solid #404040;
+  border-radius: 6px;
+  color: #ffffff;
+  outline: none;
+  font-family: 'Roboto Mono', monospace;
+  transition: border-color 0.15s;
+}
+
+.cc-gate-input:focus {
+  border-color: #00AEFF;
+}
+
+.cc-gate-input--error {
+  border-color: #ff4444;
+}
+
+.cc-gate-input::placeholder {
+  color: #555;
+}
+
+.cc-gate-error {
+  margin: 0;
+  font-size: 0.82rem;
+  color: #ff6b6b;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.cc-gate-btn {
+  padding: 0.65rem;
+  background: #00AEFF;
+  color: #000000;
+  border: none;
+  border-radius: 6px;
+  font-size: 0.95rem;
+  font-weight: 700;
+  font-family: 'Righteous', sans-serif;
+  cursor: pointer;
+  letter-spacing: 0.03em;
+  transition: background 0.15s;
+}
+
+.cc-gate-btn:hover {
+  background: #33BEFF;
+}
+
+/* ── page shell ────────────────────────────────────────────────────────────── */
+
+.cc-page {
+  max-width: 1300px;
+  margin: 0 auto;
+  padding: 5rem 1.5rem 4rem;
+  font-family: 'Roboto Flex', sans-serif;
+  color: #ffffff;
+}
+
+.cc-title {
+  font-size: clamp(1.5rem, 3vw, 2.25rem);
+  font-weight: 700;
+  margin: 0 0 1.5rem;
+  color: #ffffff;
+  font-family: 'Righteous', sans-serif;
+}
+
+.cc-loading {
+  padding: 3rem;
+  text-align: center;
+  color: #AAAAAA;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.cc-fetch-error {
+  padding: 3rem;
+  text-align: center;
+  color: #ff6b6b;
+  font-size: 0.9rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* ── filters ───────────────────────────────────────────────────────────────── */
+
+.cc-filters {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.75rem;
+  align-items: flex-start;
+  margin-bottom: 1.25rem;
+}
+
+.cc-fieldset {
+  border: 1px solid #404040;
+  border-radius: 8px;
+  padding: 0.5rem 0.9rem 0.75rem;
+  margin: 0;
+  background: #2B2B2B;
+}
+
+.cc-fieldset legend {
+  font-size: 0.7rem;
+  font-weight: 600;
+  color: #AAAAAA;
+  text-transform: uppercase;
+  letter-spacing: 0.08em;
+  padding: 0 0.35rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+.cc-label {
+  display: flex;
+  align-items: center;
+  gap: 0.45rem;
+  margin: 0.3rem 0;
+  font-size: 0.85rem;
+  cursor: pointer;
+  color: #ffffff;
+  user-select: none;
+}
+
+.cc-label input[type="checkbox"],
+.cc-label input[type="radio"] {
+  accent-color: #00AEFF;
+  width: 14px;
+  height: 14px;
+  cursor: pointer;
+}
+
+.cc-clear-btn {
+  align-self: flex-end;
+  padding: 0.5rem 1rem;
+  background: transparent;
+  border: 1px solid #404040;
+  border-radius: 6px;
+  font-size: 0.82rem;
+  cursor: pointer;
+  color: #AAAAAA;
+  font-family: 'Roboto Mono', monospace;
+  letter-spacing: 0.02em;
+  transition: border-color 0.15s, color 0.15s;
+}
+
+.cc-clear-btn:hover {
+  border-color: #00AEFF;
+  color: #00AEFF;
+}
+
+.cc-count {
+  font-size: 0.82rem;
+  color: #AAAAAA;
+  margin: 0 0 0.75rem;
+  font-family: 'Roboto Mono', monospace;
+}
+
+/* ── table ─────────────────────────────────────────────────────────────────── */
+
+.cc-table-wrap {
+  overflow-x: auto;
+  border: 1px solid #404040;
+  border-radius: 10px;
+}
+
+.cc-table {
+  width: 100%;
+  border-collapse: collapse;
+  font-size: 0.875rem;
+}
+
+.cc-table th {
+  text-align: left;
+  padding: 0.7rem 1rem;
+  background: #2B2B2B;
+  border-bottom: 1px solid #404040;
+  font-weight: 600;
+  white-space: nowrap;
+  color: #AAAAAA;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.75rem;
+  text-transform: uppercase;
+  letter-spacing: 0.06em;
+}
+
+.cc-table td {
+  padding: 0.65rem 1rem;
+  border-bottom: 1px solid #2B2B2B;
+  vertical-align: top;
+  color: #ffffff;
+}
+
+.cc-table tbody tr:last-child td {
+  border-bottom: none;
+}
+
+.cc-table tbody tr:hover td {
+  background: #2B2B2B;
+}
+
+.cc-table a {
+  color: #00AEFF;
+  text-decoration: none;
+}
+
+.cc-table a:hover {
+  text-decoration: underline;
+}
+
+.cc-sortable {
+  cursor: pointer;
+  user-select: none;
+}
+
+.cc-sortable:hover {
+  color: #ffffff;
+  background: #333333;
+}
+
+.cc-arrow {
+  font-size: 0.7rem;
+  margin-left: 0.25rem;
+  color: #00AEFF;
+}
+
+.cc-arrow--inactive {
+  color: #555555;
+}
+
+.cc-cell-platform {
+  text-transform: capitalize;
+  color: #AAAAAA;
+  white-space: nowrap;
+  font-size: 0.82rem;
+}
+
+.cc-cell-num {
+  white-space: nowrap;
+  color: #AAAAAA;
+  font-variant-numeric: tabular-nums;
+  font-family: 'Roboto Mono', monospace;
+  font-size: 0.82rem;
+}
+
+.cc-cell-games {
+  color: #AAAAAA;
+  font-size: 0.8rem;
+  max-width: 220px;
+}
+
+.cc-cell-contacts {
+  display: flex;
+  flex-wrap: wrap;
+  gap: 0.3rem;
+  min-width: 180px;
+}
+
+/* ── contact chips ─────────────────────────────────────────────────────────── */
+
+.cc-chip {
+  display: inline-block;
+  padding: 0.2rem 0.55rem;
+  border-radius: 4px;
+  font-size: 0.75rem;
+  text-decoration: none !important;
+  white-space: nowrap;
+  background: #404040;
+  color: #ffffff !important;
+  font-family: 'Roboto Mono', monospace;
+  border: 1px solid transparent;
+  transition: filter 0.12s, border-color 0.12s;
+}
+
+.cc-chip:hover {
+  filter: brightness(1.15);
+  border-color: rgba(255,255,255,0.15);
+}
+
+.cc-chip--email,
+.cc-chip--business-email {
+  background: #0d2b40;
+  color: #00AEFF !important;
+  border-color: #00AEFF33;
+}
+
+.cc-chip--twitter {
+  background: #0d1e2e;
+  color: #1d9bf0 !important;
+  border-color: #1d9bf033;
+}
+
+.cc-chip--instagram {
+  background: #2d0d1a;
+  color: #e1306c !important;
+  border-color: #e1306c33;
+}
+
+.cc-chip--tiktok {
+  background: #1a0d26;
+  color: #c77dff !important;
+  border-color: #c77dff33;
+}
+
+.cc-chip--youtube {
+  background: #2d0a0a;
+  color: #ff4e45 !important;
+  border-color: #ff4e4533;
+}
+
+.cc-chip--discord {
+  background: #0f0d26;
+  color: #7289da !important;
+  border-color: #7289da33;
+}
